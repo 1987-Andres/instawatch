@@ -1,1 +1,46 @@
+<div class="container">
+    <header>
+        <div class="header-title">
+
+            <h1>INSTAWATCH</h1>
+            <h3>"Los grandes amantes de los relojes desean compartir su pasión”</h3>
+            <div class="logo">
+                <img src="../../../../img/logo.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li class="nav-item px-1">
+                    <a class="nav-link" [routerLink]="['/']" routerLinkActive="active">Inicio</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" [routerLink]="['/miperfil']" routerLinkActive="active">Mi perfil</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" [routerLink]="['/buscar']" routerLinkActive="active">Buscar</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" [routerLink]="['/foro']" routerLinkActive="active">Foro</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+</div>
 <router-outlet></router-outlet>
+<footer>
+    <div class="footer">
+        <ul>
+            <li class="list-inline-item">
+                <a class="reset-anchor" href="#">About Us</a>
+            </li>
+            <li class="list-inline-item">
+                <a class="reset-anchor" href="#">Contacto</a>
+            </li>
+            <li class="list-inline-item">
+                <a class="reset-anchor" href="#">Telefono</a>
+            </li>
+        </ul>
+    </div>
+    <div class="subscribete"><a class="reset-anchor" href="#"><i class="fab fa-youtube"></i>¡Suscríbete para mas
+            noticias y novedades! Suscribe</a></div>
+</footer>
