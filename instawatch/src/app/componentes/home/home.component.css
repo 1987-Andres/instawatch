@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fbfbfb;
+}
+/* INICIO HEADER */
+.header-title{
+
+margin: 0 auto;
+margin: 20px 20px;
+border: 2px solid #011f4b ;
+display: block;
+font-size: 20px;
+width: auto;
+height: 160px;
+color: white;
+padding-bottom:50px ;
+background-image: url(../../../../img/time.jpg);
+background-size: cover;
+background-position: center;
+
+}
+.header-title h3{
+    padding-top: 30px;
+    text-align: center;
+    /* font-size: 25px; */
+    color: white;
+    
+}
+
+.header-title h1{
+    
+    text-align: center;
+    padding: 20px 0;
+}
+.logo{
+    margin: 0 auto;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding-top: -100px;
+}
+.nav-bar{
+    margin: 20px 20px;    
+    color: white;
+    background-color:#011f4b ;
+    height: 50px;
+    align-items: center;
+    /* text-decoration: none; */
+    
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-bar li{
+    margin-top: 14px;
+
+}
+
+
+
+/* FIN DEL HEADER */
+
+/* INICIO MAIN */
+
+.carrusel{
+    
+    border: 2px solid #011f4b;
+    margin:0 20px;
+    height: 300px;
+    display: flex;
+}
+.show1{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 180px;
+    height: 250px;
+    background-image: url('../../../../img/jaeger-reverso.webp.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* position: absolute; */
+}
+.show2{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 180px;
+    height: 250px;
+    background-image: url('../../../../img/submariner.webp');
+    background-size: cover;
+    background-position: center;
+
+    /* position: absolute; */
+}
+.show3{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 180px;
+    height: 250px;
+    background-image: url('../../../../img/omega.webp');
+    background-size: cover;
+    background-position: center;
+
+    /* position: absolute; */
+}
+.show4{
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 180px;
+    height: 250px;
+    background-image: url('../../../../img/breitling.webp');
+    background-size: cover;
+    background-position: center;
+
+    /* position: absolute; */
+}
+.one{
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-right: 100px;
+}
+.press-one{
+    margin: 20px 20px;
+    background: url("../../../../img/watches2.jpg") no-repeat center center/cover;
+    
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    width: auto;
+    height: 300px;
+}
+.press-one h4{
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+}
+.press-one p{
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+    padding-right: 500px;
+}
+
+.two{
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-left: 100px;
+}
+.press-two{
+    margin: 20px 20px;
+    background: url("../../../../img/watches1.jpg") no-repeat center center/cover;
+    
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    width: auto;
+    height: 300px;
+}
+.press-two h4{
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+    text-align: right;
+    padding-left: 100px;
+}
+
+.press-two p{
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+    padding-left: 400px;
+    text-align: right;
+}
+
+
+/* FIN DEL MAIN */
+
+/*INICIO FOOTER */
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #011f4b;
+}
+.footer li{
+    margin-right: 20px;
+    padding: 20px;
+    list-style: none;
+}
+.footer a {
+    color: white;
+    }
+
+.subscribete {
+    background-color: #011f4b;
+    color: white;
+    text-align: right;
+    
+}
+
+/* FIN DEL FOOTER */

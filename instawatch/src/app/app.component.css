@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fbfbfb;
+}
+/* INICIO HEADER */
+.header-title{
+
+margin: 0 auto;
+margin: 20px 20px;
+border: 2px solid #011f4b ;
+display: block;
+font-size: 20px;
+width: auto;
+height: 160px;
+color: white;
+padding-bottom:50px ;
+background-image: url(../../img/time.jpg);
+background-size: cover;
+background-position: center;
+
+}
+.header-title h3{
+    padding-top: 30px;
+    text-align: center;
+    /* font-size: 25px; */
+    color: white;
+    
+}
+
+.header-title h1{
+    
+    text-align: center;
+    padding: 20px 0;
+}
+.logo{
+    margin: 0 auto;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding-top: -100px;
+}
+.nav-bar{
+    margin: 20px 20px;    
+    color: white;
+    background-color:#011f4b ;
+    height: 50px;
+    /* display: flex; */
+    align-items: center;
+    /* text-decoration: none; */
+    
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-bar li{
+    margin-top: 14px;
+
+}
+
+
+
+/* FIN DEL HEADER */
+
+
+
+/*INICIO FOOTER */
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #011f4b;
+}
+.footer li{
+    margin-right: 20px;
+    padding: 20px;
+    list-style: none;
+}
+.footer a {
+    color: white;
+    }
+
+.subscribete {
+    background-color: #011f4b;
+    color: white;
+    text-align: right;
+    
+}
+
+/* FIN DEL FOOTER */
