@@ -19,7 +19,7 @@ width: auto;
 height: 160px;
 color: white;
 padding-bottom:50px ;
-background-image: url(../../../../img/time.jpg);
+background-image: url(../../../assets/img/time.jpg);
 background-size: cover;
 background-position: center;
 
@@ -82,7 +82,7 @@ background-position: center;
     border: 1px solid black;
     width: 180px;
     height: 250px;
-    background-image: url('../../../../img/jaeger-reverso.webp.jpg');
+    background-image: url('../../../assets/img/jaeger-reverso.webp.jpg');
     background-size: cover;
     background-position: center;
 
@@ -94,7 +94,7 @@ background-position: center;
     border: 1px solid black;
     width: 180px;
     height: 250px;
-    background-image: url('../../../../img/submariner.webp');
+    background-image: url('../../../assets/img/submariner.webp');
     background-size: cover;
     background-position: center;
 
@@ -106,7 +106,7 @@ background-position: center;
     border: 1px solid black;
     width: 180px;
     height: 250px;
-    background-image: url('../../../../img/omega.webp');
+    background-image: url('../../../assets/img/omega.webp');
     background-size: cover;
     background-position: center;
 
@@ -118,7 +118,7 @@ background-position: center;
     border: 1px solid black;
     width: 180px;
     height: 250px;
-    background-image: url('../../../../img/breitling.webp');
+    background-image: url('../../../assets/img/breitling.webp');
     background-size: cover;
     background-position: center;
 
@@ -133,7 +133,7 @@ background-position: center;
 }
 .press-one{
     margin: 20px 20px;
-    background: url("../../../../img/watches2.jpg") no-repeat center center/cover;
+    background: url("../../../assets/img/watches2.jpg") no-repeat center center/cover;
     
     padding: 10px;
     margin-top: 20px;
@@ -163,7 +163,7 @@ background-position: center;
 }
 .press-two{
     margin: 20px 20px;
-    background: url("../../../../img/watches1.jpg") no-repeat center center/cover;
+    background: url("../../../assets/img/watches1.jpg") no-repeat center center/cover;
     
     padding: 10px;
     margin-top: 20px;
