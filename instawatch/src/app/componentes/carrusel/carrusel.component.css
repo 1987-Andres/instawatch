@@ -20,13 +20,19 @@ button{
 }
 
 .imagen1{
+	width: 150px;
+	height: 220px;
 	background: url(../../../assets/img/jaeger-reverso.webp.jpg) no-repeat center center/cover;
 }
 
 .imagen2{
+		width: 150px;
+	height: 220px;
 	background: url(../../../assets/img/omega.webp) no-repeat center center/cover;
 }
 
 .imagen3{
+		width: 150px;
+	height: 220px;
 	background: url(../../../assets/img/breitling.webp) no-repeat center center/cover;
 }
