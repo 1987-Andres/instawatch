@@ -69,61 +69,7 @@ background-position: center;
 
 /* INICIO MAIN */
 
-.carrusel{
-    
-    border: 2px solid #011f4b;
-    margin:0 20px;
-    height: 300px;
-    display: flex;
-}
-.show1{
-    margin: 0 auto;
-    margin-top: 25px;
-    border: 1px solid black;
-    width: 180px;
-    height: 250px;
-    background-image: url('../../../assets/img/jaeger-reverso.webp.jpg');
-    background-size: cover;
-    background-position: center;
 
-    /* position: absolute; */
-}
-.show2{
-    margin: 0 auto;
-    margin-top: 25px;
-    border: 1px solid black;
-    width: 180px;
-    height: 250px;
-    background-image: url('../../../assets/img/submariner.webp');
-    background-size: cover;
-    background-position: center;
-
-    /* position: absolute; */
-}
-.show3{
-    margin: 0 auto;
-    margin-top: 25px;
-    border: 1px solid black;
-    width: 180px;
-    height: 250px;
-    background-image: url('../../../assets/img/omega.webp');
-    background-size: cover;
-    background-position: center;
-
-    /* position: absolute; */
-}
-.show4{
-    margin: 0 auto;
-    margin-top: 25px;
-    border: 1px solid black;
-    width: 180px;
-    height: 250px;
-    background-image: url('../../../assets/img/breitling.webp');
-    background-size: cover;
-    background-position: center;
-
-    /* position: absolute; */
-}
 .one{
     
     display: flex;
