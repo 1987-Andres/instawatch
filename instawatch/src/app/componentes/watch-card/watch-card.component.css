@@ -94,7 +94,7 @@ button{
     height: 270px;
     border: 2px solid var(--color);
     border-radius: 30px;
-    background: url(../img/omega.webp) no-repeat center center/cover;
+    background: url('../../../assets/img/omega.webp') no-repeat center center/cover;
     margin-right: 20px;
 
 }
