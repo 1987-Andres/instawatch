@@ -1,0 +1,68 @@
+/* INICIO MAIN */
+
+
+.one{
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-right: 100px;
+}
+.press-one{
+    margin: 20px 20px;
+    background: url("../../../assets/img/watches2.jpg") no-repeat center center/cover;
+    
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    width: auto;
+    height: 300px;
+}
+.press-one h4{
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+}
+.press-one p{
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+    padding-right: 500px;
+}
+
+.two{
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-left: 100px;
+}
+.press-two{
+    margin: 20px 20px;
+    background: url("../../../assets/img/watches1.jpg") no-repeat center center/cover;
+    
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    width: auto;
+    height: 300px;
+}
+.press-two h4{
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+    text-align: right;
+    padding-left: 100px;
+}
+
+.press-two p{
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+    padding-left: 400px;
+    text-align: right;
+}
+
+
+/* FIN DEL MAIN */
