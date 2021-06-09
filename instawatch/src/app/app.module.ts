@@ -7,6 +7,7 @@ import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { NoticiasComponent } from './componentes/noticias/noticias.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RegistroComponent } from './componentes/registro/registro.component';
     CarruselComponent,
     HomeComponent,
     NoticiasComponent,
-    RegistroComponent
+    RegistroComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
