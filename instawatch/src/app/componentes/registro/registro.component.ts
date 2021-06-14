@@ -35,7 +35,7 @@ export class RegistroComponent implements OnInit {
         Validators.required
       ]),
       password: new FormControl('', [
-        Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)
+        Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/)
       ]),
       repite_password: new FormControl('')
     }, [this.passwordRepeatValidator]);
