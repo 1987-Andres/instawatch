@@ -1,9 +1,3 @@
-<div>
-    <p>Formulario valid: {{formulario.valid}}</p>
-    <p>Formulario touched: {{formulario.touched}}</p>
-    <p>Nombre valid: {{formulario.get('nombre').valid}}</p>
-    <p>Errores Nombre: {{formulario.get('nombre').errors | json}}</p>
-</div>
 <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
     <div class="mb-3">
         <label class="form-label">Nombre</label>
