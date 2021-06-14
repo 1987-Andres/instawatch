@@ -8,8 +8,8 @@ import { WatchCardComponent } from './componentes/watch-card/watch-card.componen
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'carrusel', component: CarruselComponent },
+  { path: 'watch-card', component: WatchCardComponent },
   { path: '**', redirectTo: '/home' },
-  { path: 'watch-card', component: WatchCardComponent }
 ];
 
 @NgModule({
