@@ -11,7 +11,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
-import { WatchShowComponent } from './watch-show/watch-show.component';
+import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
 
 @NgModule({
   declarations: [
