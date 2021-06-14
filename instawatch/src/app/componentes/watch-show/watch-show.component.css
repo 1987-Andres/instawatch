@@ -125,8 +125,7 @@ h3{
     width: 200px;
     height: 270px;
     border: 2px solid var(--color);
-    border-radius: 30px;
-    background: url(https://media.revistagq.com/photos/5eccf694affc6618c4a302c3/master/w_563,h_800,c_limit/jacob%20co.jpg) no-repeat center center/cover; 
+    border-radius: 30px; 
     margin-right: 20px;
 
 }

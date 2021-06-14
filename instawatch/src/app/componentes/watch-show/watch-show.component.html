@@ -1,13 +1,14 @@
 <div class="relojes">
     <div class="reloj" *ngFor="let reloj of relojes">
-        <img src="{{reloj.imagen}}" alt="">
+        <img [src]="reloj.imagen" alt="">
         <h2>{{reloj.marca}}</h2>
         <h4>{{reloj.modelo}}</h4>
         <button (click)="onClick(reloj)" type="button" id="launch-btn" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
+            [attr.data-bs-target]="'#exampleModal' + reloj.id">
             Detalles
         </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" [id]="'exampleModal' + reloj.id" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -34,15 +35,14 @@
                             </div>
                             <div class="watch-name">
 
-                                <h3>Omega Speedmaster Moonwatch</h3>
+                                <h3>{{reloj.modelo}}</h3>
                             </div>
 
                             <section class="display">
-                                <div class="watch-pic">
-
+                                <div class="watch-pic"
+                                    [ngStyle]="{'background': 'url('+ reloj.imagen +') no-repeat center center/cover'}">
                                 </div>
-                                <div class="watch-info">
-
+                                <div class=" watch-info">
                                     <div class="watch-fields">
                                         <div>Brand: {{reloj.marca}}</div>
                                         <div>Model: {{reloj.modelo}}</div>

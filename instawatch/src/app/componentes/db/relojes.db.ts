@@ -67,7 +67,7 @@ export const RELOJES: Reloj[] = [
         diametro: 35.9,
         color: 'Blue',
         año: 2015,
-        imagen: 'https://cdn.watchbase.com/watch/lg/origin:jpg/apple/apple-watch-sport/mj3q2ll-f2.webp',
+        imagen: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MJK53_VW_34FR+watch-44-alum-silver-nc-6s_VW_34FR_WF_CO_GEO_ES?wid=750&hei=712&trim=1,0&fmt=p-jpg&qlt=95&.v=1617728050000,1601923080000',
         disponibilidad: "Si",
         descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil sit temporibus voluptatibus at laborum, eos tempore aperiam nesciunt, dolore odit! Voluptate dolorem deleniti temporibus consequatur asperiores ullam voluptatem sed."
     },
