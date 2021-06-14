@@ -19,4 +19,9 @@ export class WatchShowComponent implements OnInit {
     this.relojes = this.listaRelojesService.getAll();
   }
 
+  onClick(reloj) {
+    console.log(reloj);
+
+  }
+
 }

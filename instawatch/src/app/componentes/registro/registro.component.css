@@ -1,12 +1,16 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;}
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:#011f4b;
+    font-family: 'Times New Roman', Times, serif;
+}
 form{
   width: 70%;
   border: 1px solid black;
- background:lightgreen center center no-repeat;
+ background:var(--color) center center no-repeat;
   background-size: cover;
+  color: white;
   margin: 50px;
 padding: 20px;
 }

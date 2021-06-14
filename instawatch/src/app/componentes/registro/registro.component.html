@@ -53,5 +53,5 @@
             Las password no coinciden
         </p>
     </div>
-    <button class="btn btn-info" [disabled]="!formulario.valid">Enviar</button>
+    <button (submit)="onSubmit()" type="submit" class="btn btn-info" [disabled]="!formulario.valid">Enviar</button>
 </form>

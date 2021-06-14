@@ -8,5 +8,7 @@ export interface Reloj {
     diametro: number;
     color: string;
     año: number;
-    imagen: string
+    imagen: string;
+    disponibilidad: string;
+    descripcion: string
 }
