@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
+import { WatchShowComponent } from './watch-show/watch-show.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarruselComponent,
     HomeComponent,
-    WatchCardComponent
+    WatchCardComponent,
+    WatchShowComponent
   ],
   imports: [
     BrowserModule,
