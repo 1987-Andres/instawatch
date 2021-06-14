@@ -3,24 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     --color:#011f4b;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* CONTAINER */
 
-.container{
+ .container{
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 5px;
     width: 900px;
-    height: 530px;
+    height: 510px;
     border: 2px solid var(--color) ;
     border-radius: 30px;
     box-shadow: 20px 20px var(--color);
-    
+    margin-left: -230px;
+    /* padding-bottom: -500px; */
     
 }
 /* BOTÓN CLOSE */
 
-#close{
+/* #close{
     margin: 0 auto;
     display: flex;
     background-color: var(--color);
@@ -35,7 +37,7 @@
     margin: 0 auto;
     color: white;
     text-decoration: none;
-}
+} */
 
 /* SECTION HEAD H1 & H3 */
 h1{
@@ -43,12 +45,18 @@ h1{
     margin-left: 50px;
     text-decoration: underline;
     font-style: italic;
+    margin-top: 10px;
 
 }
 h3{
     color: var(--color);
     /* padding-bottom: 20px; */
     margin: 10px 60px;
+    
+}
+.watch-name{
+    width: 500px;
+    margin-left: -10px;
 }
 .head h3{
     /* padding-top: 100px; */
@@ -60,18 +68,19 @@ h3{
 
 
 
-.nav-btn-top{
+ .nav-btn-top{
     display: flex;
     justify-content: right;
     margin-right: 50px;
     
 }
-.nav-btn-top :first-child{
+ .nav-btn-top :first-child{
     padding-right: 20px;
 }
-button{
-    width: 120px;
+ button{
+    width: 140px;
     background-color: var(--color);
+    margin-top: -100px;
     color: white;
     
 }
@@ -80,7 +89,7 @@ button{
 
 /* SECCIÓN DISPLAY */
 
-.display{
+ .display{
     display: flex;
     margin: 0 auto;
     margin-top: 20px;
@@ -90,11 +99,12 @@ button{
 }
 
 .watch-pic{
+    
     width: 200px;
     height: 270px;
     border: 2px solid var(--color);
     border-radius: 30px;
-    background: url('../../../assets/img/omega.webp') no-repeat center center/cover;
+    background: url(../img/omega.webp) no-repeat center center/cover;
     margin-right: 20px;
 
 }
@@ -106,21 +116,24 @@ button{
     border-radius: 30px;
 }
 .watch-fields div{
-    width: 250px;
+    width: 220px;
     height: 25px;
     margin: 16px 20px;
     background-color: var(--color);
     color: white;
     text-align: center;
+    font-size: 14px;
     border-radius: 10px;
     
 }
 .watch-hist{
     margin-top: 1px ;
+    font-size: 15px;
+
 }
 .watch-hist p{
     
-    padding: 10px 20px;
+    padding: 0px 15px;
     text-align: justify;
 }
 .watch-hist h3{
@@ -129,10 +142,67 @@ button{
 /* BOTONES NAV BOTTOM */
 .nav-btn-bottom{
     display: flex;
-    margin-top: 30px;
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-left: 60px;
+    
 }
 .nav-btn-bottom .btn{
-margin-left: 500px;
+margin-left: 450px;
+margin-top: -8px;
 }
 
+/* MODAL */
+
+
+
+#launch-btn{
+    width: 200px;
+    margin: 20px 20px;
+    background-color: var(--color);
+    border: none;
+}
+.modal-header{
+    background-color: var(--color);
+    color: white;
+    width: auto;
+    height: 20px;
+}
+.btn-close{
+    background-color: white;
+}
+
+
+.modal-content{
+    margin: 0 auto;
+        justify-content: center;
+
+    width: 1000px;
+    height: 600px;
+    margin-right: 100px;
+    /* margin-bottom: 100px; */
+}
+.modal-body{
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+#exampleModal{
+    margin: 0 auto;
+    width: 1350px;
+    /* margin-left: 180px; */
+    /* background-color: tomato; */
+
+    
+    /* margin-top: -400px; */
+    /* border: 5px solid black; */
+}
+.modal-footer{
+    display: flex;
+    margin-bottom: 20px;
+    /* margin: 0 auto; */
+    height: 40px;
+}
+.btn-secondary{
+background-color: var(--color);
+}
