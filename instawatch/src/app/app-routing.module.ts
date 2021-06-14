@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CarruselComponent } from './componentes/carrusel/carrusel.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';

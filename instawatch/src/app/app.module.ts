@@ -17,7 +17,13 @@ import { WatchShowComponent } from './watch-show/watch-show.component';
   declarations: [
     AppComponent,
     CarruselComponent,
-    HomeComponent
+    HomeComponent,
+    NoticiasComponent,
+    RegistroComponent,
+    LoginComponent,
+    ContactoComponent,
+    WatchCardComponent,
+    WatchShowComponent,
   ],
   imports: [
     BrowserModule,
