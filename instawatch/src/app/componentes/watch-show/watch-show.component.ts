@@ -19,8 +19,13 @@ export class WatchShowComponent implements OnInit {
     this.relojes = this.listaRelojesService.getAll();
   }
 
-  onClick(reloj) {
-    console.log(reloj);
+  onChange($event) {
+    if ($event.target.value === 'todos') {
+      this.relojes = this.listaRelojesService.getAll();
+    } else {
+      this.relojes = this.listaRelojesService.getByMarca($event.target.value);
+    }
+    console.log($event.target);
 
   }
 

@@ -14,4 +14,10 @@ export class ListaRelojesService {
     return RELOJES;
   }
 
+  getByMarca(pMarca: string): Reloj[] {
+    return RELOJES.filter((reloj) => {
+      return reloj.marca === pMarca;
+    });
+  }
+
 }
