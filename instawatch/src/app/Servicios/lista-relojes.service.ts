@@ -14,9 +14,15 @@ export class ListaRelojesService {
     return RELOJES;
   }
 
-  getByMarca(pMarca: string): Reloj[] {
+  filterByMarca(pMarca: string): Reloj[] {
     return RELOJES.filter((reloj) => {
-      return reloj.marca === pMarca;
+      return reloj.marca.toLowerCase() === pMarca.toLowerCase();
+    });
+  }
+
+  filterByletra(pLetra: string): Reloj[] {
+    return RELOJES.filter((reloj) => {
+      return reloj.marca.toLowerCase() === pLetra.toLowerCase()
     });
   }
 

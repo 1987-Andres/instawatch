@@ -23,10 +23,17 @@ export class WatchShowComponent implements OnInit {
     if ($event.target.value === 'todos') {
       this.relojes = this.listaRelojesService.getAll();
     } else {
-      this.relojes = this.listaRelojesService.getByMarca($event.target.value);
+      this.relojes = this.listaRelojesService.filterByMarca($event.target.value);
     }
-    console.log($event.target);
+  }
 
+
+  onKeyUp($event) {
+    if ($event.target.value !== '') {
+      this.relojes = this.listaRelojesService.filterByletra($event.target.value);
+    } else {
+      this.relojes = this.listaRelojesService.getAll();
+    }
   }
 
 }
