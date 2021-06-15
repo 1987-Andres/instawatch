@@ -27,22 +27,22 @@
             </ul>
         </div>
     </header>
+    <router-outlet></router-outlet>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li class="list-inline-item">
+                    <a class="reset-anchor" href="#">About Us</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="reset-anchor" href="#">Telefono</a>
+                </li>
+            </ul>
+        </div>
+        <div class="subscribete"><a class="reset-anchor" href="#"><i class="fab fa-youtube"></i>
+                ¡Suscríbete para más noticias y novedades! Suscribe</a></div>
+    </footer>
 </div>
-<router-outlet></router-outlet>
-<footer>
-    <div class="footer">
-        <ul>
-            <li class="list-inline-item">
-                <a class="reset-anchor" href="#">About Us</a>
-            </li>
-            <li class="nav-item px-1">
-                <a class="nav-link" [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a>
-            </li>
-            <li class="list-inline-item">
-                <a class="reset-anchor" href="#">Telefono</a>
-            </li>
-        </ul>
-    </div>
-    <div class="subscribete"><a class="reset-anchor" href="#"><i class="fab fa-youtube"></i>¡Suscríbete para mas
-            noticias y novedades! Suscribe</a></div>
-</footer>
