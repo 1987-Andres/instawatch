@@ -1,6 +1,9 @@
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:#011f4b;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .login {

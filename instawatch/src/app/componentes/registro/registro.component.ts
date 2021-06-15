@@ -19,9 +19,10 @@ export class RegistroComponent implements OnInit {
       ]),
       apellidos: new FormControl('', [
         Validators.required,
-        Validators.maxLength(10)
+        Validators.maxLength(30)
       ]),
       email: new FormControl('', [
+        Validators.required,
         Validators.pattern(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)
       ]),
       direccion: new FormControl('', [
@@ -35,10 +36,11 @@ export class RegistroComponent implements OnInit {
         Validators.required
       ]),
       password: new FormControl('', [
+        Validators.required,
         Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/)
       ]),
       repite_password: new FormControl('')
-    }, [this.passwordRepeatValidator]);
+    }, [Validators.required, this.passwordRepeatValidator]);
   }
   ngOnInit(): void {
     const control = this.formulario.get('email');

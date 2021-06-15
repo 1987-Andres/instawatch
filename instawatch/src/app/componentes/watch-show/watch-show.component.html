@@ -1,1 +1,79 @@
-<p>watch-show works!</p>
+<div class="search">
+    <select (change)="onChange($event)">
+        <option value="todos">Selecciona una marca</option>
+        <option value="Rolex">Rolex</option>
+        <option value="Omega">Omega</option>
+        <option value="Hamilton">Hamilton</option>
+        <option value="Cartier">Cartier</option>
+        <option value="TAG Heuer">Tag Heuer</option>
+        <option value="Longines">Longines</option>
+    </select>
+
+    <input type="text" id="search" placeholder="Escribe una marca" (keyup)="onKeyUp($event)">
+</div>
+
+<div class="relojes">
+    <div class="reloj" *ngFor="let reloj of relojes">
+        <img [src]="reloj.imagen" alt="">
+        <h2>{{reloj.marca}}</h2>
+        <h4>{{reloj.modelo}}</h4>
+        <button type="button" id="launch-btn" class="btn btn-primary" data-bs-toggle="modal"
+            [attr.data-bs-target]="'#exampleModal' + reloj.id">
+            Detalles
+        </button>
+        <div class="modal fade" [id]="'exampleModal' + reloj.id" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">User's Watch Collection</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <!-- <div id="close">
+                                    <a href="/main_page/index.html" title="Click here to close the window">X</a>
+                                </div> -->
+                            <section class="head">
+
+                                <h1>Collection</h1>
+
+                            </section>
+                            <div class="watch-name">
+
+                                <h3>{{reloj.modelo}}</h3>
+                            </div>
+
+                            <section class="display">
+                                <div class="watch-pic"
+                                    [ngStyle]="{'background': 'url('+ reloj.imagen +') no-repeat center center/cover'}">
+                                </div>
+                                <div class=" watch-info">
+                                    <div class="watch-fields">
+                                        <div>Brand: {{reloj.marca}}</div>
+                                        <div>Model: {{reloj.modelo}}</div>
+                                        <div>Movement: cal. 1861 Manual</div>
+                                        <div>Material: {{reloj.material}}</div>
+                                        <div>Dial Color: {{reloj.color}}</div>
+                                        <div>Available: {{reloj.disponibilidad}}</div>
+                                    </div>
+                                    <div class="watch-hist">
+                                        <h3>Description:</h3>
+                                        <p>{{reloj.descripcion}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="nav-btn-bottom">
+                                <div>
+                                    <button>More Photos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
