@@ -1,14 +1,16 @@
-<select (change)="onChange($event)">
-    <option value="todos">Selecciona una marca</option>
-    <option value="Rolex">Rolex</option>
-    <option value="Omega">Omega</option>
-    <option value="Hamilton">Hamilton</option>
-    <option value="Cartier">Cartier</option>
-    <option value="TAG Heuer">Tag Heuer</option>
-    <option value="Longines">Longines</option>
-</select>
+<div class="search">
+    <select (change)="onChange($event)">
+        <option value="todos">Selecciona una marca</option>
+        <option value="Rolex">Rolex</option>
+        <option value="Omega">Omega</option>
+        <option value="Hamilton">Hamilton</option>
+        <option value="Cartier">Cartier</option>
+        <option value="TAG Heuer">Tag Heuer</option>
+        <option value="Longines">Longines</option>
+    </select>
 
-<input type="text" id="search" placeholder="Escribe una marca" (keyup)="onKeyUp($event)">
+    <input type="text" id="search" placeholder="Escribe una marca" (keyup)="onKeyUp($event)">
+</div>
 
 <div class="relojes">
     <div class="reloj" *ngFor="let reloj of relojes">
@@ -37,14 +39,6 @@
                                 <h1>Collection</h1>
 
                             </section>
-                            <div class="nav-btn-top">
-                                <div class="btn">
-                                    <button (click)="onClick(reloj)">Previous Watch</button>
-                                </div>
-                                <div class=" btn">
-                                    <button (click)="onClick(reloj)">Next Watch</button>
-                                </div>
-                            </div>
                             <div class="watch-name">
 
                                 <h3>{{reloj.modelo}}</h3>
