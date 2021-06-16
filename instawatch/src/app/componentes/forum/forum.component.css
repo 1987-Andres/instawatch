@@ -28,7 +28,8 @@ font-size: 18px;
 h1, h2, h3, h4, h5, h6 { 
     font-weight: normal; 
     margin: 0; 
-    padding: 10px 0; 
+    padding: 10px 0;
+    padding-left: 10px; 
     color: white;
 background-color:var(--color); }
 
@@ -94,21 +95,14 @@ blockquote cite { font-style: normal; padding-right: 0px; }
 
 /* Structure */
 
-body
+/* body
 {
 	margin: 0;
 	float: left;
 	width: 100%; 
-}
+} */
 
-#header
-{
-	float: left; 
-	width: 100%; 
-	clear: both;
-	border-top: 10px solid #111111;
-	background: var(--color)
-}
+
 
 #navigation
 {
@@ -122,11 +116,19 @@ body
 
 #wrapper
 {
-	clear: both;
-	float: left;
+	/* clear: both; */
+	/* float: left; */
 	width: 100%;
 	margin-top: 10px;
 	background: transparent url(/instawatch/src/assets/img/hr_dotted.gif) 60% 0 repeat-y; 
+    border: 2px solid red;
+}
+#wrapper::after{
+    clear: both;
+    height: 0;
+    display: block;
+    content: '';
+
 }
 
 #content-wrapper
@@ -150,20 +152,10 @@ body
 #sidebar
 {
 	float: left;
-	padding-left: 20px;
+	padding-left: 80px;
 }
 
-#footer
-{
-	clear: both;
-	float: left;
-	width: 100%; 
-	color: #888888;
-	text-align: center; 
-	background-color: #222222;
-	border-top: 1px solid #000000;
-	border-bottom: 10px solid #191919;
-}
+
 
 /* Header */
 
@@ -220,12 +212,3 @@ body#babout li#labout a
 	background: #404040 url(/instawatch/src/assets/img/navigation_hover.gif) top left repeat;
 }
 
-/* Footer */
-
-#footer p { margin: 15px 0; }
-
-#footer a:link { color: #888888; font-weight: bold; border-bottom: 1px dotted #888888; } 
-
-#footer a:visited { color: #666666; font-weight: bold; border-bottom: 1px dotted #666666; }
-
-#footer a:hover, #footer a:active { color: #999999; border-bottom: 1px solid #999999; }
