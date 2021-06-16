@@ -7,6 +7,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
+import { ForumComponent } from './componentes/forum/forum.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'carrusel', component: CarruselComponent },
   { path: 'watch-card', component: WatchCardComponent },
   { path: 'watch-show', component: WatchShowComponent },
+  { path: 'forum', component: ForumComponent },
   { path: '**', redirectTo: '/home' },
 ];
 
