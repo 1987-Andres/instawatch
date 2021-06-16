@@ -12,6 +12,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { WatchShowComponent } from './componentes/watch-show/watch-show.componen
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

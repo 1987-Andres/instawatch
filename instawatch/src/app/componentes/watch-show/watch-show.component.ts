@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ApiService } from 'src/app/Servicios/api.service';
 import { ListaRelojesService } from 'src/app/Servicios/lista-relojes.service';
 import { Reloj } from '../interfaces/lista_relojes.interface';
 
@@ -13,10 +14,13 @@ export class WatchShowComponent implements OnInit {
 
   relojes: Reloj[];
 
-  constructor(private activatedRoute: ActivatedRoute, private listaRelojesService: ListaRelojesService) { }
+  constructor(private activatedRoute: ActivatedRoute, private listaRelojesService: ListaRelojesService, private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getAll().then(console.log);
     this.relojes = this.listaRelojesService.getAll();
+
+
   }
 
   onChange($event) {
