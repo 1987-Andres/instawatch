@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Reloj } from '../componentes/interfaces/lista_relojes.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +8,7 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  baseUrl = "http://localhost:3000/api/watches";
+  baseUrl = "http://localhost:3000/api/watches/";
 
   getAll(): Promise<any> {
 
@@ -17,6 +16,11 @@ export class ApiService {
 
     return this.httpClient.get(this.baseUrl).toPromise();
   }
+
+  filterByMarca(pMarca: string): Promise<any> {
+    return this.httpClient.get(this.baseUrl + pMarca).toPromise();
+  };
+}
 
   // filterByMarca(pMarca: string): Reloj[] {
   //   return RELOJES.filter((reloj) => {
@@ -29,6 +33,3 @@ export class ApiService {
   //     return reloj.marca.toLowerCase() === pLetra.toLowerCase()
   //   });
   // }
-
-
-}

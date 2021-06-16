@@ -18,17 +18,19 @@ export class WatchShowComponent implements OnInit {
   ngOnInit(): void {
     this.apiService.getAll().then(response => {
       this.relojes = response;
+      console.log(this.relojes);
+
     })
       .catch(error => console.log(error));
   }
 
-  // onChange($event) {
-  //   if ($event.target.value === 'todos') {
-  //     this.relojes = this.api.getAll();
-  //   } else {
-  //     this.relojes = this.listaRelojesService.filterByMarca($event.target.value);
-  //   }
-  // }
+  async onChange($event) {
+    if ($event.target.value === 'todos') {
+      this.relojes = await this.apiService.getAll();
+    } else {
+      this.relojes = await this.apiService.filterByMarca($event.target.value);
+    }
+  }
 
 
   // onKeyUp($event) {
