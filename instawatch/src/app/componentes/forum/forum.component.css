@@ -25,7 +25,12 @@ font-size: 18px;
 
 /* Html Elements */
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; padding: 10px 0; color: white; }
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: normal; 
+    margin: 0; 
+    padding: 10px 0; 
+    color: white;
+background-color:var(--color); }
 
 h1 { font-size: 32px; }
 
@@ -40,7 +45,7 @@ h5, h6 { font-size: 17px; }
 ul, ol, dl, blockquote, pre
 {
 	color: white;
-	margin: 10px 35px; 
+	/* margin: 10px 35px;  */
 	padding: 10px 30px; 
 	line-height: 1.6em;
 	border: 1px solid #1a1a1a;
@@ -63,7 +68,7 @@ dt
 	
 }
 
-dd { margin: 0; padding: 2px 0 5px; margin-bottom: 5px; border-bottom: 1px dotted #555555; }
+dd { margin: 0; padding: 2px 0 0px; margin-bottom: 5px; border-bottom: 1px dotted #555555; }
 
 dd.last { border-bottom-width: 0; }
 
@@ -77,7 +82,7 @@ em { font-style: italic; }
 
 strong { font-weight: bold; }
 
-ins { color: #999999; text-decoration: none; padding-left: 20px; background: transparent url(/instawatch/src/assets/img/information.png) center left no-repeat; }
+ins { color: #999999; text-decoration: none; padding-left: 0px; background: transparent url(/instawatch/src/assets/img/information.png) center left no-repeat; }
 
 del { text-decoration: line-through; } 
 
@@ -85,7 +90,7 @@ blockquote { text-align: right; }
 
 blockquote p { text-align: left; }
 
-blockquote cite { font-style: normal; padding-right: 10px; }
+blockquote cite { font-style: normal; padding-right: 0px; }
 
 /* Structure */
 
@@ -120,7 +125,7 @@ body
 	clear: both;
 	float: left;
 	width: 100%;
-	margin: 10px 0; 
+	margin-top: 10px;
 	background: transparent url(/instawatch/src/assets/img/hr_dotted.gif) 60% 0 repeat-y; 
 }
 
@@ -133,7 +138,7 @@ body
 #content
 {
 	float: left;
-	padding: 0 20px;
+	padding: 0 0px;
 }
 
 #sidebar-wrapper
@@ -145,7 +150,7 @@ body
 #sidebar
 {
 	float: left;
-	padding: 0 20px;
+	padding-left: 20px;
 }
 
 #footer
@@ -177,7 +182,7 @@ body
 {
 	float: left;
 	display: block;
-	padding: 5px 10px; 
+	padding: 5px 0px; 
 }
 
 #navigation a:link,
@@ -208,7 +213,7 @@ body#babout li#labout a
 {
 	color: #999999;
 	margin: 10px 35px; 
-	padding: 5px 30px; 
+	padding: 5px 0px; 
 	line-height: 1.6em;
 	border: 1px solid #1a1a1a;
 	border-top: 10px solid #151515;
