@@ -120,14 +120,16 @@ blockquote cite { font-style: normal; padding-right: 0px; }
 	/* float: left; */
 	width: 100%;
 	margin-top: 10px;
-	background: transparent url(/instawatch/src/assets/img/hr_dotted.gif) 60% 0 repeat-y; 
-    border: 2px solid red;
+	/* background: transparent url(/instawatch/src/assets/img/hr_dotted.gif) 60% 0 repeat-y;  */
+    background-color: lightgray;
+    border: 2px solid var(--color);
 }
 #wrapper::after{
     clear: both;
     height: 0;
     display: block;
     content: '';
+
 
 }
 
