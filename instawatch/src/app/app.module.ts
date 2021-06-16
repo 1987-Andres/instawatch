@@ -12,6 +12,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
+import { ForumComponent } from './forum/forum.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { WatchShowComponent } from './componentes/watch-show/watch-show.componen
     ContactoComponent,
     WatchCardComponent,
     WatchShowComponent,
+    ForumComponent,
   ],
   imports: [
     BrowserModule,
