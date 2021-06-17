@@ -14,6 +14,7 @@ import { WatchCardComponent } from './componentes/watch-card/watch-card.componen
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ForumComponent } from './componentes/forum/forum.component';
+import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ForumComponent } from './componentes/forum/forum.component';
     WatchCardComponent,
     WatchShowComponent,
     ForumComponent,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,

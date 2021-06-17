@@ -12,6 +12,7 @@ import { SaludoComponent } from './componentes/forum/saludo/saludo.component';
 import { NewArrivalComponent } from './componentes/forum/new-arrival/new-arrival.component';
 import { CompraVentaComponent } from './componentes/forum/compra-venta/compra-venta.component';
 import { DudasComponent } from './componentes/forum/dudas/dudas.component';
+import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'forum/dudas', component: DudasComponent },
   { path: 'forum/compraventa', component: CompraVentaComponent },
   { path: 'forum/newarrival', component: NewArrivalComponent },
+  { path: 'forum/formulario', component: FormularioComponent },
   { path: '**', redirectTo: '/home' },
 ];
 
