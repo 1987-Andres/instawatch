@@ -46,7 +46,7 @@ h5, h6 { font-size: 17px; }
 ul, ol, dl, blockquote, pre
 {
 	color: white;
-	/* margin: 10px 35px;  */
+	
 	padding: 10px 30px; 
 	line-height: 1.6em;
 	border: 1px solid #1a1a1a;
@@ -75,7 +75,7 @@ dd.last { border-bottom-width: 0; }
 
 pre { font-family: Consolas, Verdana, "Courier New"; font-size: 11px; padding: 10px 30px; }
 
-/* code { color: #779955; } */
+
 
 abbr, acronym { text-decoration: none; border-bottom: 1px dotted #aaaaaa; cursor: help; }
 
@@ -95,12 +95,6 @@ blockquote cite { font-style: normal; padding-right: 0px; }
 
 /* Structure */
 
-/* body
-{
-	margin: 0;
-	float: left;
-	width: 100%; 
-} */
 
 
 
@@ -114,43 +108,23 @@ blockquote cite { font-style: normal; padding-right: 0px; }
 	background: #eeeeee url(/instawatch/src/assets/img/navigation_bg.gif) top left repeat; 
 }
 
-#wrapper
-{
-	/* clear: both; */
-	/* float: left; */
-	width: 100%;
-	margin-top: 10px;
-	/* background: transparent url(/instawatch/src/assets/img/hr_dotted.gif) 60% 0 repeat-y;  */
-    background-color: lightgray;
-    border: 2px solid var(--color);
-	margin-bottom: 10px;
-
-}
-#wrapper::after{
-    clear: both;
-    height: 0;
-    display: block;
-    content: '';
-
-
-}
-
-#content-wrapper
-{
-	width: 60%;
-	float: left;
-	/* margin-left: 1px; */
-	margin-top: 20px;
-	padding-left: 20px;
+button{
+	width: 150px;
+	margin-top: 5px;
+    margin-bottom: 10px;
+	background-color: var(--color);
+	color: white;
+    margin-left: 1000px;
 }
 
 #content
 {
-	/* float: left; */
-/* margin: 0 auto; */
-width: 800px;
-	padding: 0 0px;
+	
+margin: 0 auto;
+width: 1200px;
+/* padding: 0 0px; */
 }
+
 
 #sidebar-wrapper
 {
@@ -160,13 +134,6 @@ width: 800px;
 
 }
 
-#sidebar
-{
-	float: left;
-	/* padding-left: 80px; */
-	margin-left: 50px;
-	margin-top: 20px;
-}
 
 
 
@@ -224,4 +191,6 @@ body#babout li#labout a
 	border-top: 10px solid #151515;
 	background: #404040 url(/instawatch/src/assets/img/navigation_hover.gif) top left repeat;
 }
+
+
 
