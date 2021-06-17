@@ -13,7 +13,9 @@ export class WatchShowComponent implements OnInit {
 
   relojes: Reloj[];
 
-  constructor(private activatedRoute: ActivatedRoute, private apiService: ApiService) { }
+  constructor(private activatedRoute: ActivatedRoute, private apiService: ApiService) {
+
+  }
 
   ngOnInit(): void {
     this.apiService.getAll().then(response => {
@@ -25,6 +27,14 @@ export class WatchShowComponent implements OnInit {
   }
 
   async onChange($event) {
+    let data = [this.relojes]; //"TAG Heuer", "Rolex", "Omega", "Rolex", "Omega", "Xiaomi", "Windows", "Apple"
+
+    const dataArr = new Set(data);
+
+    let result = [...dataArr];
+
+    console.log(result);
+
     if ($event.target.value === 'todos') {
       this.relojes = await this.apiService.getAll();
     } else {
@@ -33,11 +43,11 @@ export class WatchShowComponent implements OnInit {
   }
 
 
-  // onKeyUp($event) {
+  // async onKeyUp($event) {
   //   if ($event.target.value !== '') {
-  //     this.relojes = this.listaRelojesService.filterByletra($event.target.value);
+  //     this.relojes = await this.apiService.filterByletra($event.target.value);
   //   } else {
-  //     this.relojes = this.listaRelojesService.getAll();
+  //     this.relojes = await this.apiService.getAll();
   //   }
   // }
 

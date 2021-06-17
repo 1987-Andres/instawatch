@@ -22,14 +22,7 @@ export class ApiService {
   };
 }
 
-  // filterByMarca(pMarca: string): Reloj[] {
-  //   return RELOJES.filter((reloj) => {
-  //     return reloj.marca.toLowerCase() === pMarca.toLowerCase();
-  //   });
-  // }
 
-  // filterByletra(pLetra: string): Reloj[] {
-  //   return RELOJES.filter((reloj) => {
-  //     return reloj.marca.toLowerCase() === pLetra.toLowerCase()
-  //   });
-  // }
+// filterByletra(){
+
+// }

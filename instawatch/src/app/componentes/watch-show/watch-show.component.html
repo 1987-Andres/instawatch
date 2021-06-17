@@ -1,12 +1,7 @@
 <div class="search">
     <select (change)="onChange($event)">
         <option value="todos">Selecciona una marca</option>
-        <option value="Rolex">Rolex</option>
-        <option value="Omega">Omega</option>
-        <option value="Hamilton">Hamilton</option>
-        <option value="Cartier">Cartier</option>
-        <option value="TAG Heuer">Tag Heuer</option>
-        <option value="Longines">Longines</option>
+        <option *ngFor="let reloj of relojes" value="reloj.watch_brand">{{reloj.watch_brand}}</option>
     </select>
 
     <input type="text" id="search" placeholder="Escribe una marca">
