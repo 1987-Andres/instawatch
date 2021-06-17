@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ForumComponent } from './componentes/forum/forum.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactoComponent,
     WatchCardComponent,
     WatchShowComponent,
+    ForumComponent,
   ],
   imports: [
     BrowserModule,

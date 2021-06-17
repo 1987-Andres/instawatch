@@ -19,7 +19,7 @@
                     <a class="nav-link" [routerLink]="['/watch-show']" routerLinkActive="active">Todos los relojes</a>
                 </li>
                 <li class="nav-item px-1">
-                    <a class="nav-link" [routerLink]="['/foro']" routerLinkActive="active">Foro</a>
+                    <a class="nav-link" [routerLink]="['/forum']" routerLinkActive="active">Foro</a>
                 </li>
                 <li class="nav-item px-1">
                     <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login/Registro</a>
@@ -27,7 +27,9 @@
             </ul>
         </div>
     </header>
+
     <router-outlet></router-outlet>
+
     <footer>
         <div class="footer">
             <ul>
@@ -41,8 +43,13 @@
                     <a class="reset-anchor" href="#">Telefono</a>
                 </li>
             </ul>
+
+            <div class="subscribe">
+                <a class="reset-anchor" href="#"><i class="fab fa-youtube"></i>
+                    ¡Suscríbete para más noticias y novedades!</a>
+            </div>
         </div>
-        <div class="subscribete"><a class="reset-anchor" href="#"><i class="fab fa-youtube"></i>
-                ¡Suscríbete para más noticias y novedades! Suscribe</a></div>
+
+
     </footer>
 </div>
