@@ -11,7 +11,8 @@ import { Reloj } from '../interfaces/lista_relojes.interface';
 })
 export class WatchShowComponent implements OnInit {
 
-  relojes: Reloj[];
+  relojes: any[];
+  marcas: any;
 
   constructor(private activatedRoute: ActivatedRoute, private apiService: ApiService) {
 
@@ -20,20 +21,15 @@ export class WatchShowComponent implements OnInit {
   ngOnInit(): void {
     this.apiService.getAll().then(response => {
       this.relojes = response;
-      console.log(this.relojes);
+      let marcas = this.relojes.map(reloj => reloj.watch_brand.toLowerCase())
+      this.marcas = new Set(marcas)
 
     })
       .catch(error => console.log(error));
   }
 
   async onChange($event) {
-    let data = [this.relojes]; //"TAG Heuer", "Rolex", "Omega", "Rolex", "Omega", "Xiaomi", "Windows", "Apple"
-
-    const dataArr = new Set(data);
-
-    let result = [...dataArr];
-
-    console.log(result);
+    console.log($event.target.value);
 
     if ($event.target.value === 'todos') {
       this.relojes = await this.apiService.getAll();

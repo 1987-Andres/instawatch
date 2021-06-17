@@ -1,7 +1,7 @@
 <div class="search">
     <select (change)="onChange($event)">
         <option value="todos">Selecciona una marca</option>
-        <option *ngFor="let reloj of relojes" value="reloj.watch_brand">{{reloj.watch_brand}}</option>
+        <option *ngFor="let marca of marcas" [value]="marca">{{marca}}</option>
     </select>
 
     <input type="text" id="search" placeholder="Escribe una marca">
