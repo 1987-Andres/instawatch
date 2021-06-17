@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ListaRelojesService } from 'src/app/Servicios/lista-relojes.service';
+import { ApiService } from 'src/app/Servicios/api.service';
 import { Reloj } from '../interfaces/lista_relojes.interface';
 
 
@@ -13,27 +13,42 @@ export class WatchShowComponent implements OnInit {
 
   relojes: Reloj[];
 
-  constructor(private activatedRoute: ActivatedRoute, private listaRelojesService: ListaRelojesService) { }
+  constructor(private activatedRoute: ActivatedRoute, private apiService: ApiService) {
+
+  }
 
   ngOnInit(): void {
-    this.relojes = this.listaRelojesService.getAll();
+    this.apiService.getAll().then(response => {
+      this.relojes = response;
+      console.log(this.relojes);
+
+    })
+      .catch(error => console.log(error));
   }
 
-  onChange($event) {
+  async onChange($event) {
+    let data = [this.relojes]; //"TAG Heuer", "Rolex", "Omega", "Rolex", "Omega", "Xiaomi", "Windows", "Apple"
+
+    const dataArr = new Set(data);
+
+    let result = [...dataArr];
+
+    console.log(result);
+
     if ($event.target.value === 'todos') {
-      this.relojes = this.listaRelojesService.getAll();
+      this.relojes = await this.apiService.getAll();
     } else {
-      this.relojes = this.listaRelojesService.filterByMarca($event.target.value);
+      this.relojes = await this.apiService.filterByMarca($event.target.value);
     }
   }
 
 
-  onKeyUp($event) {
-    if ($event.target.value !== '') {
-      this.relojes = this.listaRelojesService.filterByletra($event.target.value);
-    } else {
-      this.relojes = this.listaRelojesService.getAll();
-    }
-  }
+  // async onKeyUp($event) {
+  //   if ($event.target.value !== '') {
+  //     this.relojes = await this.apiService.filterByletra($event.target.value);
+  //   } else {
+  //     this.relojes = await this.apiService.getAll();
+  //   }
+  // }
 
 }

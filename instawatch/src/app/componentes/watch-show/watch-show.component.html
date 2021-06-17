@@ -1,22 +1,17 @@
 <div class="search">
     <select (change)="onChange($event)">
         <option value="todos">Selecciona una marca</option>
-        <option value="Rolex">Rolex</option>
-        <option value="Omega">Omega</option>
-        <option value="Hamilton">Hamilton</option>
-        <option value="Cartier">Cartier</option>
-        <option value="TAG Heuer">Tag Heuer</option>
-        <option value="Longines">Longines</option>
+        <option *ngFor="let reloj of relojes" value="reloj.watch_brand">{{reloj.watch_brand}}</option>
     </select>
 
-    <input type="text" id="search" placeholder="Escribe una marca" (keyup)="onKeyUp($event)">
+    <input type="text" id="search" placeholder="Escribe una marca">
 </div>
 
 <div class="relojes">
     <div class="reloj" *ngFor="let reloj of relojes">
         <img [src]="reloj.imagen" alt="">
-        <h2>{{reloj.marca}}</h2>
-        <h4>{{reloj.modelo}}</h4>
+        <h2>{{reloj.watch_brand}}</h2>
+        <h4>{{reloj.watch_model}}</h4>
         <button type="button" id="launch-btn" class="btn btn-primary" data-bs-toggle="modal"
             [attr.data-bs-target]="'#exampleModal' + reloj.id">
             Detalles
@@ -32,8 +27,8 @@
                     <div class="modal-body">
                         <div class="container">
                             <!-- <div id="close">
-                                    <a href="/main_page/index.html" title="Click here to close the window">X</a>
-                                </div> -->
+                                            <a href="/main_page/index.html" title="Click here to close the window">X</a>
+                                        </div> -->
                             <section class="head">
 
                                 <h1>Collection</h1>
@@ -41,7 +36,7 @@
                             </section>
                             <div class="watch-name">
 
-                                <h3>{{reloj.modelo}}</h3>
+                                <h3>{{reloj.watch_model}}</h3>
                             </div>
 
                             <section class="display">
@@ -50,16 +45,16 @@
                                 </div>
                                 <div class=" watch-info">
                                     <div class="watch-fields">
-                                        <div>Brand: {{reloj.marca}}</div>
-                                        <div>Model: {{reloj.modelo}}</div>
+                                        <div>Brand: {{reloj.watch_brand}}</div>
+                                        <div>Model: {{reloj.watch_model}}</div>
                                         <div>Movement: cal. 1861 Manual</div>
                                         <div>Material: {{reloj.material}}</div>
-                                        <div>Dial Color: {{reloj.color}}</div>
-                                        <div>Available: {{reloj.disponibilidad}}</div>
+                                        <div>Dial Color: {{reloj.dial_color}}</div>
+                                        <div>Available: {{reloj.availability}}</div>
                                     </div>
                                     <div class="watch-hist">
                                         <h3>Description:</h3>
-                                        <p>{{reloj.descripcion}}
+                                        <p>{{reloj.notes}}
                                         </p>
                                     </div>
                                 </div>
