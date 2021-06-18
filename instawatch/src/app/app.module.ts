@@ -15,6 +15,7 @@ import { WatchShowComponent } from './componentes/watch-show/watch-show.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ForumComponent } from './componentes/forum/forum.component';
 import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
+import { CompraVentaComponent } from './componentes/forum/compra-venta/compra-venta.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FormularioComponent } from './Componentes/Forum/formulario/formulario.c
     WatchShowComponent,
     ForumComponent,
     FormularioComponent,
+    CompraVentaComponent,
   ],
   imports: [
     BrowserModule,
