@@ -11,7 +11,7 @@ import { Reloj } from '../interfaces/lista_relojes.interface';
 })
 export class WatchShowComponent implements OnInit {
 
-  relojes: any[];
+  relojes: Reloj[];
   marcas: any;
 
   constructor(private activatedRoute: ActivatedRoute, private apiService: ApiService) {
