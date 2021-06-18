@@ -8,7 +8,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
 import { ForumComponent } from './componentes/forum/forum.component';
-import { SaludoComponent } from './componentes/forum/saludo/saludo.component';
+// import { SaludoComponent } from './componentes/forum/saludo/saludo.component';
 import { NewArrivalComponent } from './componentes/forum/new-arrival/new-arrival.component';
 import { CompraVentaComponent } from './componentes/forum/compra-venta/compra-venta.component';
 import { DudasComponent } from './componentes/forum/dudas/dudas.component';
@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'watch-card', component: WatchCardComponent },
   { path: 'watch-show', component: WatchShowComponent },
   { path: 'forum', component: ForumComponent },
-  { path: 'forum/saludo', component: SaludoComponent },
+  // { path: 'forum/saludo', component: SaludoComponent },
   { path: 'forum/dudas', component: DudasComponent },
   { path: 'forum/compraventa', component: CompraVentaComponent },
   { path: 'forum/newarrival', component: NewArrivalComponent },
