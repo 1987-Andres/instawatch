@@ -21,8 +21,3 @@ export class ApiService {
     return this.httpClient.get(this.baseUrl + pMarca).toPromise();
   };
 }
-
-
-// filterByletra(){
-
-// }

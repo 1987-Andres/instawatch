@@ -15,6 +15,8 @@ import { WatchShowComponent } from './componentes/watch-show/watch-show.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ForumComponent } from './componentes/forum/forum.component';
 import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { FormularioComponent } from './Componentes/Forum/formulario/formulario.c
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
