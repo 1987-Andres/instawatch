@@ -9,13 +9,19 @@
     margin: 0 auto !important;
 
 }
+
 .modal-content{
-    /* max-width: 500px !important ; */
+   
     margin: 0 auto !important;
 
 
 }
 .modal-body{
         margin: 0 auto !important;
+
+} 
+.modal-dialog{
+    margin: 0 auto !important;
+    
 
 }

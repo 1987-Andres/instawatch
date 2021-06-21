@@ -47,24 +47,7 @@ select{
     /* padding-bottom: -500px; */
     
 }
-/* BOTÓN CLOSE */
 
-/* #close{
-    margin: 0 auto;
-    display: flex;
-    background-color: var(--color);
-    
-    width: 20px;
-    height: 20px;
-    
-    margin-right: 30px;
-    margin-top: 20px;
-}
-#close a{
-    margin: 0 auto;
-    color: white;
-    text-decoration: none;
-} */
 
 /* SECTION HEAD H1 & H3 */
 h1{
@@ -132,6 +115,7 @@ h3{
     border: 2px solid var(--color);
     border-radius: 30px; 
     margin-right: 20px;
+    /* background: no-repeat center center/cover; */
 
 }
 .watch-info{
@@ -179,7 +163,9 @@ margin-top: -8px;
 
 /* MODAL */
 
-
+.modal-dialog{
+    padding-top: 20px;
+}
 
 #launch-btn{
     width: 90%;
@@ -187,14 +173,23 @@ margin-top: -8px;
     background-color: var(--color);
     border: none;
 }
+.modal-title{
+    padding-left: 20px;
+}
 .modal-header{
     background-color: var(--color);
     color: white;
     width: auto;
-    height: 20px;
+    height: 30px;
+    margin-bottom: 20px;
 }
 .btn-close{
     background-color: white;
+    width: 25px;
+    height: 100%;
+    margin-right: 5px;
+    margin: 0px 0px;
+    
 }
 
 
@@ -202,28 +197,18 @@ margin-top: -8px;
     
     width: 1000px;
     height: 600px;
-    margin-left: 10px;
-    
-    margin: 0 auto;
-    /* justify-content: center; */
-    /* margin-right: 400px; */
-    /* margin-bottom: 100px; */
+    margin-left: 500px;
 }
 .modal-body{
-    /* width: 500px; */
-    /* height: 100px; */
+    
     margin: 0 auto;
+    
     
 }
 #exampleModal{
     margin: 0 auto;
     width: 1350px;
-    /* margin-left: 180px; */
-    /* background-color: tomato; */
-
     
-    /* margin-top: -400px; */
-    /* border: 5px solid black; */
 }
 .modal-footer{
     display: flex;
