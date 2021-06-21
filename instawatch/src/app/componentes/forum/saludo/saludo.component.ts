@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { ForumService } from 'src/app/Servicios/forum.service';
-import { Post } from '../../interfaces/lista_posts.interface';
 
 @Component({
   selector: 'app-saludo',

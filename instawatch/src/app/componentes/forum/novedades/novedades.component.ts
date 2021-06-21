@@ -2,13 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ForumService } from 'src/app/Servicios/forum.service';
 
 @Component({
-  selector: 'app-dudas',
-  templateUrl: './dudas.component.html',
-  styleUrls: ['./dudas.component.css']
+  selector: 'app-novedades',
+  templateUrl: './novedades.component.html',
+  styleUrls: ['./novedades.component.css']
 })
-export class DudasComponent implements OnInit {
-
-
+export class NovedadesComponent implements OnInit {
   posts: any[];
   saludo: any;
 

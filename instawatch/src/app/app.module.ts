@@ -16,6 +16,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ForumComponent } from './componentes/forum/forum.component';
 import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
 import { CommonModule } from '@angular/common';
+import { CompraventaComponent } from './Componentes/Forum/compraventa/compraventa.component';
+import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.component';
+import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
+import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
 
 
 @NgModule({
@@ -31,6 +35,10 @@ import { CommonModule } from '@angular/common';
     WatchShowComponent,
     ForumComponent,
     FormularioComponent,
+    CompraventaComponent,
+    DudillasComponent,
+    NovedadesComponent,
+    PresentacionesComponent,
   ],
   imports: [
     BrowserModule,
