@@ -9,7 +9,9 @@
 
 <div class="relojes">
     <div class="reloj" *ngFor="let reloj of relojes">
-        <img [src]="reloj.imagen" alt="">
+        <div class="foto-display">
+            <img [src]="reloj.imagen" alt="">
+        </div>
         <h2>{{reloj.watch_brand}}</h2>
         <h4>{{reloj.watch_model}}</h4>
         <button type="button" id="launch-btn" class="btn btn-primary" data-bs-toggle="modal"
