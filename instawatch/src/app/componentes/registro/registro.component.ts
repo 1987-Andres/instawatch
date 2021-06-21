@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators';
+import { UsersService } from 'src/app/Servicios/users.service';
+
+declare var Swal;
 
 @Component({
   selector: 'app-registro',
@@ -11,7 +14,7 @@ export class RegistroComponent implements OnInit {
 
   formulario: FormGroup;
 
-  constructor() {
+  constructor(private usersService: UsersService) {
     this.formulario = new FormGroup({
       nombre: new FormControl('', [
         Validators.required,
@@ -53,8 +56,29 @@ export class RegistroComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.formulario.value);
+    // this.formulario.value
+    this.usersService.registrar(this.formulario.value)
+      .then(response => {
+        console.log(response);
+
+        if (response['affectedRows'] === 1) {
+          Swal.fire('Registro completado con éxito');
+          this.formulario.reset();
+        }
+
+        if (response['error']) {
+          Swal.fire(
+            'Error registro!',
+            response['error'],
+            'error'
+          )
+        }
+
+      })
+      .catch(error => console.log(error));
   }
+
+
 
   checkControl(controlName, validatorName) {
     return this.formulario.get(controlName).hasError(validatorName) && this.formulario.get(controlName).touched;

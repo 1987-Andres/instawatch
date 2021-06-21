@@ -1,10 +1,13 @@
-<div class="login">
-    <div class="form">
-        <h2>Bienvenido</h2>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <a href="#">Recuerda tu password</a>
-        <input type="submit" value="Sign In" class="submit">
-        <a class="nav-link" [routerLink]="['/registro']" routerLinkActive="active">¿No estas registrado? Hazlo aqui</a>
+<form #formulario="ngForm" (ngSubmit)="onSubmit()">
+    <div class="login">
+        <div class="form">
+            <h2>Bienvenido</h2>
+            <input type="text" placeholder="email">
+            <input type="password" placeholder="Password">
+            <a href="#">Recuerda tu password</a>
+            <input type="submit" value="Sign In" class="submit">
+            <a class="nav-link" [routerLink]="['/registro']" routerLinkActive="active">¿No estas registrado? Hazlo
+                aqui</a>
+        </div>
     </div>
-</div>
+</form>
