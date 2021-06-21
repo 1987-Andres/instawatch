@@ -23,14 +23,17 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  async onSubmit() {
-    const response = await this.usersService.login(this.formulario.value);
-    console.log();
+  async onSubmit(formValues) {
+    const response = await this.usersService.login(formValues);
     if (response['error']) {
-      Swal.fire('Error de login', response['error'], 'error');
+      console.log(response['error']);
+
+      // Swal.fire('Error de login', response['error'], 'error');
     } else {
-      Swal.fire('Login Correcto', 'Ya puedes disfrutar de la aplicación', 'success');
-      // localStorage.setItem('token', response['token']);
+      console.log('mu bien');
+
+      // Swal.fire('Login Correcto', 'Ya puedes disfrutar de la aplicación', 'success');
+      localStorage.setItem('token', response['token']);
     }
   }
 

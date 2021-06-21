@@ -9,7 +9,7 @@ export class UsersService {
   baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'http://localhost:3000';
+    this.baseUrl = 'http://localhost:3000/api/users';
   }
 
   registrar(formValues) {

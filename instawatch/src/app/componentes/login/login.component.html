@@ -1,9 +1,9 @@
-<form #formulario="ngForm" (ngSubmit)="onSubmit()">
+<form #formulario="ngForm" (ngSubmit)="onSubmit(formulario.value)">
     <div class="login">
         <div class="form">
             <h2>Bienvenido</h2>
-            <input type="text" placeholder="email">
-            <input type="password" placeholder="Password">
+            <input type="text" placeholder="email" ngModel name="email">
+            <input type="password" placeholder="Password" ngModel name="password">
             <a href="#">Recuerda tu password</a>
             <input type="submit" value="Sign In" class="submit">
             <a class="nav-link" [routerLink]="['/registro']" routerLinkActive="active">¿No estas registrado? Hazlo
