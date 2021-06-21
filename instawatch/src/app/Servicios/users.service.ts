@@ -9,16 +9,7 @@ export class UsersService {
   baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'http://registrate.ngrok.io';
-  }
-
-  getPremio() {
-    // INCLUIR CABECERA DEL LOGIN
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'user-token': '6a9ca2c73a3f'
-      })
-    }
+    this.baseUrl = 'http://localhost:3000';
   }
 
   registrar(formValues) {
