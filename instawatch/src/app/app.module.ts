@@ -20,7 +20,6 @@ import { CompraventaComponent } from './Componentes/Forum/compraventa/compravent
 import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.component';
 import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
 import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
-import { CompraVentaComponent } from './componentes/forum/compra-venta/compra-venta.component';
 
 
 @NgModule({

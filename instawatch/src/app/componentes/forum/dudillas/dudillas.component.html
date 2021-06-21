@@ -3,11 +3,14 @@
         <div id="content">
             <div class="next"><button>Publicar Nuevo Hilo</button></div>
             <h3>Estás en la sección Dudas, expón tu duda aquí.</h3>
-            <div *ngFor="let post of posts">
-                <p>{{post.titulo}}</p>
-                <p>{{post.descripcion}}</p>
-            </div>
-            <hr>
+            <dl>
+                <article *ngFor="let post of posts">
+                    <a href="">
+                        <h4>{{post.titulo}}</h4>
+                    </a>
+                    <span>{{post.descripcion}}</span>
+                </article>
+            </dl>
         </div>
     </div>
 </div>
