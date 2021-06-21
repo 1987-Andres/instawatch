@@ -38,13 +38,4 @@ export class WatchShowComponent implements OnInit {
     }
   }
 
-
-  // async onKeyUp($event) {
-  //   if ($event.target.value !== '') {
-  //     this.relojes = await this.apiService.filterByletra($event.target.value);
-  //   } else {
-  //     this.relojes = await this.apiService.getAll();
-  //   }
-  // }
-
 }

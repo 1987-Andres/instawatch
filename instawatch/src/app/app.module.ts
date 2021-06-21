@@ -15,7 +15,13 @@ import { WatchShowComponent } from './componentes/watch-show/watch-show.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ForumComponent } from './componentes/forum/forum.component';
 import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
+import { CommonModule } from '@angular/common';
+import { CompraventaComponent } from './Componentes/Forum/compraventa/compraventa.component';
+import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.component';
+import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
+import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
 import { CompraVentaComponent } from './componentes/forum/compra-venta/compra-venta.component';
+
 
 @NgModule({
   declarations: [
@@ -30,10 +36,14 @@ import { CompraVentaComponent } from './componentes/forum/compra-venta/compra-ve
     WatchShowComponent,
     ForumComponent,
     FormularioComponent,
-    CompraVentaComponent,
+    CompraventaComponent,
+    DudillasComponent,
+    NovedadesComponent,
+    PresentacionesComponent,
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
