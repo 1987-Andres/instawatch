@@ -2,7 +2,7 @@
 
 
     <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-        <div class="mb-3">
+        <div class="mb-5">
             <label class="form-label">Nombre</label>
             <input type="text" class="form-control" formControlName="nombre">
             <p class="error" *ngIf="checkControl('nombre', 'required')">
