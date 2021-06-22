@@ -1,6 +1,6 @@
-<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-    <div class="mb-3">
-        <label class="form-label">Nombre</label>
+<form class="row" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="col-4">
+        <label class="form-label">Nombre:</label>
         <input type="text" class="form-control" formControlName="nombre">
         <p class="error" *ngIf="checkControl('nombre', 'required')">
             El campo nombre es requerido
@@ -9,8 +9,8 @@
             El tamaño del nombre debe ser mínimo 3 caracteres
         </p>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Apellidos</label>
+    <div class="col-4">
+        <label class="form-label">Apellidos:</label>
         <input type="text" class="form-control" formControlName="apellidos">
         <p class="error" *ngIf="checkControl('apellidos', 'required')">
             El campo apellidos es requerido
@@ -19,38 +19,39 @@
             El tamaño del apellido debe ser como máximo 10
         </p>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Direccion</label>
+    <div class="col-4">
+        <label class="form-label">Dirección:</label>
         <input type="text" class="form-control" formControlName="direccion">
     </div>
-    <div class="mb-3">
-        <label class="form-label">Sexo</label>
+
+    <div class="col-4">
+        <label class="form-label">Fecha de nacimiento:</label>
+        <input type="Date" class="form-control" formControlName="fecha_nacimiento">
+    </div>
+    <div class="col-4">
+        <label class="form-label">Email:</label>
+        <input type="text" class="form-control" formControlName="email">
+    </div>
+    <div id="sex" class="col-4">
+        <label class="form-label">Sexo:</label>
         <select formControlName="sexo">
             <option value="Masculino">Masculino</option>
             <option value="Femenino">Femenino</option>
         </select>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Fecha de nacimiento</label>
-        <input type="Date" class="form-control" formControlName="fecha_nacimiento">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="text" class="form-control" formControlName="email">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Password</label>
+    <div class="col-6">
+        <label class="form-label">Password:</label>
         <input type="text" class="form-control" formControlName="password">
         <p class="error" *ngIf="checkControl('password', 'pattern')">
             El formato del password es incorrecto
         </p>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Repite Password</label>
+    <div class="col-6">
+        <label class="form-label">Repite Password:</label>
         <input type="text" class="form-control" formControlName="repite_password">
         <p class="error" *ngIf="formulario.hasError('passwordrepeatvalidator')">
             Las password no coinciden
         </p>
     </div>
-    <button (submit)="onSubmit()" type="submit" class="btn btn-info" [disabled]="!formulario.valid">Enviar</button>
+    <button (submit)="onSubmit()" type="submit" class="" [disabled]="!formulario.valid">Enviar</button>
 </form>
