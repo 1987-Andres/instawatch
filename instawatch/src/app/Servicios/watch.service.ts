@@ -39,6 +39,15 @@ export class WatchService {
     return this.httpClient.get(this.baseUrl + pMarca, httpOptions).toPromise();
   }
 
+  getByUser(pUser): Promise<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        authorization: localStorage.getItem('token')
+      })
+    };
+    return this.httpClient.get(this.baseUrl + pUser, httpOptions).toPromise();
+  }
+
   getById(pId): Promise<any> {
     const httpOptions = {
       headers: new HttpHeaders({
@@ -47,4 +56,6 @@ export class WatchService {
     };
     return this.httpClient.get(this.baseUrl + pId, httpOptions).toPromise();
   }
+
+
 }
