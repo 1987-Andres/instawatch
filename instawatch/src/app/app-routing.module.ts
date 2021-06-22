@@ -13,6 +13,8 @@ import { PresentacionesComponent } from './Componentes/Forum/presentaciones/pres
 import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.component';
 import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
 import { CompraventaComponent } from './Componentes/Forum/compraventa/compraventa.component';
+import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
 
 
 const routes: Routes = [
@@ -29,6 +31,8 @@ const routes: Routes = [
   { path: 'forum/compraventa', component: CompraventaComponent },
   { path: 'forum/novedades', component: NovedadesComponent },
   { path: 'forum/formulario', component: FormularioComponent },
+  { path: 'perfil', component: PerfilComponent },
+  { path: 'perfil/newwatch', component: NewWatchComponent },
   { path: '**', redirectTo: '/home' },
 ];
 

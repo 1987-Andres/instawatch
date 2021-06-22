@@ -20,6 +20,8 @@ import { CompraventaComponent } from './Componentes/Forum/compraventa/compravent
 import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.component';
 import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
 import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
+import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { PresentacionesComponent } from './Componentes/Forum/presentaciones/pres
     DudillasComponent,
     NovedadesComponent,
     PresentacionesComponent,
+    PerfilComponent,
+    NewWatchComponent
   ],
   imports: [
     BrowserModule,
