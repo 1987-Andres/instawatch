@@ -10,7 +10,7 @@ import { WatchService } from 'src/app/Servicios/watch.service';
 export class NewWatchComponent implements OnInit {
 
   formulario: FormGroup;
-  watchs: any
+  watches: any
 
   constructor(private watchService: WatchService) {
     this.formulario = new FormGroup({
@@ -48,8 +48,8 @@ export class NewWatchComponent implements OnInit {
   }
 
   async onClick(formulario) {
-    this.watchs = await this.watchService.create(formulario.value)
-    console.log(this.watchs);
+    this.watches = await this.watchService.create(formulario.value)
+    console.log(this.watches);
   }
 
   checkControl(controlName, validatorName) {
