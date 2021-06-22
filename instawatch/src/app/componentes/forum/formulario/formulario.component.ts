@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { debounceTime } from 'rxjs/operators';
+import { ForumService } from 'src/app/Servicios/forum.service';
+import { Post } from '../../interfaces/lista_posts.interface';
 
 @Component({
   selector: 'app-formulario',
@@ -10,8 +11,9 @@ import { debounceTime } from 'rxjs/operators';
 export class FormularioComponent implements OnInit {
 
   formulario: FormGroup;
+  posts: any;
 
-  constructor() {
+  constructor(private forumService: ForumService) {
     this.formulario = new FormGroup({
       titulo: new FormControl('', [
         Validators.required,
@@ -20,15 +22,20 @@ export class FormularioComponent implements OnInit {
       descripcion: new FormControl('', [
         Validators.required,
         Validators.minLength(10)
+      ]),
+      categoria: new FormControl('', [
+        Validators.required,
+
       ])
     })
   }
-  ngOnInit(): void {
+  ngOnInit() {
 
   }
 
-  onSubmit() {
-    console.log(this.formulario.value);
+  async onClick(formulario) {
+    this.posts = await this.forumService.createPost(formulario.value)
+    console.log(this.posts);
   }
 
   checkControl(controlName, validatorName) {

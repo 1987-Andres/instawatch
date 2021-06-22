@@ -13,8 +13,21 @@ export class ForumService {
 
   getAll(): Promise<Post[]> {
 
-    // GET http://localhost:3000/watches
+    // GET http://localhost:3000/api/watches
 
     return this.httpClient.get<Post[]>(this.baseUrl).toPromise();
   }
+
+  createPost(pPost: Post) {
+
+    // GET http://localhost:3000/api/forum
+
+    return this.httpClient.post(this.baseUrl, pPost).toPromise();
+  }
+
+  getByCategoria(pCategoria): Promise<any> {
+
+    return this.httpClient.get(this.baseUrl + pCategoria).toPromise();
+  }
+
 }

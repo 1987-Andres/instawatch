@@ -13,7 +13,7 @@ export class UsersService {
   }
 
   registrar(formValues) {
-    return this.httpClient.post(`${this.baseUrl}/register`, formValues).toPromise();
+    return this.httpClient.post(`${this.baseUrl}/registro`, formValues).toPromise();
   }
 
   login(formValues) {

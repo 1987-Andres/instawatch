@@ -9,15 +9,13 @@ import { ForumService } from 'src/app/Servicios/forum.service';
 export class PresentacionesComponent implements OnInit {
 
   posts: any[];
-  saludo: any;
 
   constructor(private forumService: ForumService) {
     this.posts = []
   }
 
   async ngOnInit() {
-    this.posts = await this.forumService.getAll()
-    console.log(this.posts);
-
+    this.posts = await this.forumService.getByCategoria('presentaciones')
   }
+
 }
