@@ -1,4 +1,4 @@
-<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+<form [formGroup]="formulario">
     <div class="mb-3">
         <label class="form-label">Titulo</label>
         <input type="text" class="form-control" formControlName="titulo">
@@ -18,6 +18,17 @@
         <p class="error" *ngIf="checkControl('descripcion', 'minlength')">
             El tamaño de la descripcion debe ser como minimo 10 caracteres
         </p>
+        <select id="categoria" formControlName="categoria">
+            <option value="presentaciones">Presentaciones</option>
+            <option value="dudas">Dudas</option>
+            <option value="compraventa">Compraventa</option>
+            <option value="novedades">Novedades</option>
+            <p class="error" *ngIf="checkControl('descripcion', 'required')">
+                El campo descripcion es requerido
+            </p>
+        </select>
     </div>
-    <button (submit)="onSubmit()" type="submit" class="btn btn-info" [disabled]="!formulario.valid">Crear tema</button>
+
+    <button (click)="onClick(formulario)" type="submit" class="btn btn-info" [disabled]="!formulario.valid">Crear
+        tema</button>
 </form>

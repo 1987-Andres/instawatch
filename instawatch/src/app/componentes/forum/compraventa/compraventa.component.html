@@ -1,7 +1,8 @@
 <div id="wrapper">
     <div id="content-wrapper">
         <div id="content">
-            <div class="next"><button>Publicar Nuevo Hilo</button></div>
+            <div class="next"><button><a [routerLink]="['/forum/formulario']" routerLinkActive="active">Publicar Nuevo
+                        Hilo</a></button></div>
             <h3>Estás en la sección Compra-Venta, postea aquí.</h3>
             <dl>
                 <article *ngFor="let post of posts">
