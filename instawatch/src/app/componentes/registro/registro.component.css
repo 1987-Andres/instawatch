@@ -5,14 +5,18 @@
     --color:#011f4b;
     font-family: 'Times New Roman', Times, serif;
 }
+.container{
+margin: 0 auto;
+}
 form{
-  width: 70%;
+  margin: 0 auto;
+  width: 100%;
   border: 1px solid black;
- background:var(--color) center center no-repeat;
+  background:var(--color);
   background-size: cover;
   color: white;
-  margin: 50px;
-padding: 20px;
+  /* margin: 50px; */
+  /* padding: 20px; */
 }
 
 button{
