@@ -21,6 +21,7 @@ import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.compone
 import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
 import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
 import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { PerfilComponent } from './Componentes/perfil/perfil.component';
     NovedadesComponent,
     PresentacionesComponent,
     PerfilComponent,
+    NewWatchComponent
   ],
   imports: [
     BrowserModule,
