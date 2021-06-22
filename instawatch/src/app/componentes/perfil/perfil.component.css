@@ -1,4 +1,38 @@
-img{
-    width: 300px;
-    height: auto;
+
+*{
+    margin: 0 auto;
+    --color:#011f4b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.profile{
+  border: 2px solid var(--color);
+  padding: 20px 50px;
+  margin-bottom: 10px;
+}
+img{
+    width: 120px;
+    height: auto;
+    border: 2px solid var(--color);
+}
+
+button{
+  width: 180px;
+  color: white;
+  background-color: var(--color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+    
+    
+}
+
+label{
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: var(--color);
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+

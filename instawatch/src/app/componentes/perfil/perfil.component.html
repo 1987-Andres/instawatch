@@ -1,23 +1,38 @@
-<div class="container row">
-    <img src="https://i.pinimg.com/originals/56/cb/73/56cb7322104c30291f7e60fed00d3cd6.jpg" alt="">
-    <div class="mb-3 col-4">
-        <label class="form-label">Nombre</label>
+<div class="profile">
+    <div class="all-data row">
+        <div class="col-4"><img src="https://i.pinimg.com/originals/56/cb/73/56cb7322104c30291f7e60fed00d3cd6.jpg"
+                alt="">
+            <div class=""><button><a [routerLink]="['/perfil/newwatch']" routerLinkActive="active">Ver mi
+                        colección</a></button>
+            </div>
+        </div>
+        <div class="data row col-8">
+            <div class="col-4">
+                <label class="form-label">Nombre:</label>
+                <p>Nombre del pájaro</p>
+            </div>
+            <div class="col-4">
+                <label class="form-label">Apellidos:</label>
+                <p>Apellidos del pájaro</p>
+            </div>
+            <div class="col-4">
+                <label class="form-label">Dirección:</label>
+                <p>Dirección del pájaro</p>
+            </div>
+            <div class="col-4">
+                <label class="form-label">Sexo:</label>
+                <p>No definido</p>
+            </div>
+            <div class="col-4">
+                <label class="form-label">Fecha de nacimiento:</label>
+                <p>XX/XX/XXXX</p>
+            </div>
+            <div class="col-4">
+                <label class="form-label">Email:</label>
+                <p>Email del pájaro</p>
+            </div>
+        </div>
     </div>
-    <div class="mb-3 col-4">
-        <label class="form-label">Apellidos</label>
-    </div>
-    <div class="mb-3 col-4">
-        <label class="form-label">Direccion</label>
-    </div>
-    <div class="mb-3 col-4">
-        <label class="form-label">Sexo</label>
-    </div>
-    <div class="mb-3 col-4">
-        <label class="form-label">Fecha de nacimiento</label>
-    </div>
-    <div class="mb-3 col-4">
-        <label class="form-label">Email</label>
-    </div>
-    <div class="next"><button><a [routerLink]="['/perfil/newwatch']" routerLinkActive="active">Añadir reloj</a></button>
+    <div class=""><button><a [routerLink]="['/perfil/newwatch']" routerLinkActive="active">Añadir reloj</a></button>
     </div>
 </div>
