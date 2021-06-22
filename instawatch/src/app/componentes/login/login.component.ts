@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UsersService } from 'src/app/Servicios/users.service';
 
 declare var Swal;
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   formulario: FormGroup;
 
-  constructor(private usersService: UsersService) {
+  constructor(private usersService: UsersService, private router: Router) {
     this.formulario = new FormGroup({
       email: new FormControl(),
       password: new FormControl()
@@ -30,7 +31,7 @@ export class LoginComponent implements OnInit {
 
       // Swal.fire('Error de login', response['error'], 'error');
     } else {
-      console.log('mu bien');
+      this.router.navigate(['perfil']);
 
       // Swal.fire('Login Correcto', 'Ya puedes disfrutar de la aplicación', 'success');
       localStorage.setItem('token', response['token']);

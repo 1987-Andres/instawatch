@@ -45,11 +45,12 @@ export class NewWatchComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
   async onClick(formulario) {
-    this.watches = await this.watchService.create(formulario.value)
-    console.log(this.watches);
+    const response = await this.watchService.create(formulario.value)
+    console.log(response);
   }
 
   checkControl(controlName, validatorName) {
