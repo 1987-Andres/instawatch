@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+      --color:#011f4b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: var(--color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.relojes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reloj{
+    border: 1px solid black;
+    background-color: burlywood;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+.reloj img{
+    width: 250px;
+    height: auto;
+}

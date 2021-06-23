@@ -1,0 +1,10 @@
+<h1>Mi coleccion de relojes</h1>
+
+<div class="container">
+    <div class="relojes" *ngFor="let reloj of relojes">
+        <div class="reloj">
+            <h3>{{reloj.watch_brand}} {{reloj.watch_model}}</h3>
+            <img src="{{reloj.imagen}}">
+        </div>
+    </div>
+</div>
