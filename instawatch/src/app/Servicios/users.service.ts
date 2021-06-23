@@ -37,4 +37,9 @@ export class UsersService {
     };
     return this.httpClient.post(this.baseUrl + "/perfil/", formValues, httpOptions).toPromise();
   }
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 }
