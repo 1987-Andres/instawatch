@@ -7,49 +7,35 @@ import { UsersService } from 'src/app/Servicios/users.service';
 declare var Swal;
 
 @Component({
-  selector: 'app-registro',
-  templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
+  selector: 'app-editar-reloj',
+  templateUrl: './editar-reloj.component.html',
+  styleUrls: ['./editar-reloj.component.css']
 })
-export class RegistroComponent implements OnInit {
-
+export class EditarRelojComponent implements OnInit {
   formulario: FormGroup;
+  constructor(private userService: UsersService, private router: Router) {
 
-  constructor(private usersService: UsersService, private router: Router) {
+  }
+
+  async ngOnInit() {
+    const usuario = await this.userService.getById()
     this.formulario = new FormGroup({
-      nombre: new FormControl('', [
-        Validators.required,
-        Validators.minLength(3)
+      nombre: new FormControl(usuario.nombre, [
       ]),
-      apellidos: new FormControl('', [
-        Validators.required,
-        Validators.maxLength(30)
+      apellidos: new FormControl(usuario.apellidos, [
       ]),
-      email: new FormControl('', [
-        Validators.required,
+      email: new FormControl(usuario.email, [
         Validators.pattern(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)
       ]),
-      direccion: new FormControl('', [
-        Validators.required,
-        Validators.minLength(3)
+      direccion: new FormControl(usuario.direccion, [
       ]),
-      sexo: new FormControl('', [
-        Validators.required
+      sexo: new FormControl(usuario.sexo, [
       ]),
-      fecha_nacimiento: new FormControl('', [
-        Validators.required
+      fecha_nacimiento: new FormControl(usuario.fecha_nacimiento, [
       ]),
-      imagen: new FormControl('', [
-        Validators.required
+      imagen: new FormControl(usuario.imagen, [
       ]),
-      password: new FormControl('', [
-        Validators.required,
-        Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/)
-      ]),
-      repite_password: new FormControl('')
-    }, [Validators.required, this.passwordRepeatValidator]);
-  }
-  ngOnInit(): void {
+    })
     const control = this.formulario.get('email');
     control
       .valueChanges
@@ -60,18 +46,18 @@ export class RegistroComponent implements OnInit {
   }
 
   onSubmit() {
-    this.usersService.registrar(this.formulario.value)
+    this.userService.update(this.formulario.value)
       .then(response => {
         console.log(response);
 
         if (response['affectedRows'] === 1) {
-          this.router.navigate(['login']);
+          this.router.navigate(['perfil']);
           this.formulario.reset();
         }
 
         if (response['error']) {
           Swal.fire(
-            'Error registro!',
+            'Error al editar!',
             response['error'],
             'error'
           )

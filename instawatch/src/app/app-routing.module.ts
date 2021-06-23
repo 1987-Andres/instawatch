@@ -15,6 +15,8 @@ import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.comp
 import { CompraventaComponent } from './Componentes/Forum/compraventa/compraventa.component';
 import { PerfilComponent } from './Componentes/perfil/perfil.component';
 import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
+import { CollectionComponent } from './Componentes/perfil/collection/collection.component';
+import { EditarRelojComponent } from './Componentes/perfil/editar-reloj/editar-reloj.component';
 
 
 const routes: Routes = [
@@ -33,6 +35,8 @@ const routes: Routes = [
   { path: 'forum/formulario', component: FormularioComponent },
   { path: 'perfil', component: PerfilComponent },
   { path: 'perfil/newwatch', component: NewWatchComponent },
+  { path: 'perfil/collection', component: CollectionComponent },
+  { path: 'perfil/edit', component: EditarRelojComponent },
   { path: '**', redirectTo: '/home' },
 ];
 

@@ -20,4 +20,21 @@ export class UsersService {
     return this.httpClient.post(`${this.baseUrl}/login`, formValues).toPromise();
   }
 
+  getById(): Promise<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        authorization: localStorage.getItem('token')
+      })
+    };
+    return this.httpClient.get(this.baseUrl + "/perfil/", httpOptions).toPromise();
+  }
+
+  update(formValues) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        authorization: localStorage.getItem('token')
+      })
+    };
+    return this.httpClient.post(this.baseUrl + "/perfil/", formValues, httpOptions).toPromise();
+  }
 }

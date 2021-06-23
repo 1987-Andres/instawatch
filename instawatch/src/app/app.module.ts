@@ -22,6 +22,8 @@ import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.comp
 import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
 import { PerfilComponent } from './Componentes/perfil/perfil.component';
 import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
+import { CollectionComponent } from './Componentes/perfil/collection/collection.component';
+import { EditarRelojComponent } from './Componentes/perfil/editar-reloj/editar-reloj.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.comp
     NovedadesComponent,
     PresentacionesComponent,
     PerfilComponent,
-    NewWatchComponent
+    NewWatchComponent,
+    CollectionComponent,
+    EditarRelojComponent
   ],
   imports: [
     BrowserModule,

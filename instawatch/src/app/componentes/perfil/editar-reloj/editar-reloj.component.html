@@ -43,19 +43,5 @@
         <label class="form-label">Imagen</label>
         <input type="text" class="form-control" formControlName="imagen">
     </div>
-    <div class="col-6">
-        <label class="form-label">Password:</label>
-        <input type="text" class="form-control" formControlName="password">
-        <p class="error" *ngIf="checkControl('password', 'pattern')">
-            El formato del password es incorrecto
-        </p>
-    </div>
-    <div class="col-6">
-        <label class="form-label">Repite Password:</label>
-        <input type="text" class="form-control" formControlName="repite_password">
-        <p class="error" *ngIf="formulario.hasError('passwordrepeatvalidator')">
-            Las password no coinciden
-        </p>
-    </div>
     <button (submit)="onSubmit()" type="submit" class="" [disabled]="!formulario.valid">Enviar</button>
 </form>
