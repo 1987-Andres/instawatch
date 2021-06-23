@@ -24,7 +24,6 @@ import { PerfilComponent } from './Componentes/perfil/perfil.component';
 import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
 import { CollectionComponent } from './Componentes/perfil/collection/collection.component';
 import { EditarRelojComponent } from './Componentes/perfil/editar-reloj/editar-reloj.component';
-import { RepuestaForoComponent } from './Componentes/perfil/repuesta-foro/repuesta-foro.component';
 import { RespuestaForoComponent } from './Componentes/forum/respuesta-foro/respuesta-foro.component';
 
 
@@ -49,7 +48,6 @@ import { RespuestaForoComponent } from './Componentes/forum/respuesta-foro/respu
     NewWatchComponent,
     CollectionComponent,
     EditarRelojComponent,
-    RepuestaForoComponent,
     RespuestaForoComponent
   ],
   imports: [
