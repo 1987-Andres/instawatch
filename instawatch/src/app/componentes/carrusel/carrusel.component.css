@@ -1,44 +1,33 @@
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 	--color:#011f4b;
 }
 
-.carrusel{
-	
-	margin-top: 20px;
-	
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	border: 3px solid var(--color);
-	justify-content: space-around;
-	height: 250px;
-	
-}
-
 button{
-	width: 150px;
-	margin-top: 115px;
 	background-color: var(--color);
-	color: white;
+	width: 50px;
+	height: 50px;
+	margin-top: 80px;
 }
 
-.imagen1{
-	width: 150px;
-	height: 220px;
-	background: url(../../../assets/img/jaeger-reverso.webp.jpg) no-repeat center center/cover;
+.carousel-inner{
+	
+	height: 250px;
+	margin-bottom: 20px;
+	
 }
 
-.imagen2{
-		width: 150px;
-	height: 220px;
-	background: url(../../../assets/img/omega.webp) no-repeat center center/cover;
+.row {
+	margin: 0 auto;
+	width: 600px;
+	
+}
+.row img{
+	height: 100%;
+	
+}
+.col{
+height: 100%;
+
+
 }
 
-.imagen3{
-		width: 150px;
-	height: 220px;
-	background: url(../../../assets/img/breitling.webp) no-repeat center center/cover;
-}
