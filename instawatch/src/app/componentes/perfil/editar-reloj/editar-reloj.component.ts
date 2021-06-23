@@ -14,31 +14,28 @@ declare var Swal;
 export class EditarRelojComponent implements OnInit {
   formulario: FormGroup;
   constructor(private userService: UsersService, private router: Router) {
-    this.formulario = new FormGroup({
-      nombre: new FormControl('', [
-      ]),
-      apellidos: new FormControl('', [
-      ]),
-      email: new FormControl('', [
-        Validators.pattern(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)
-      ]),
-      direccion: new FormControl('', [
-      ]),
-      sexo: new FormControl('', [
-      ]),
-      fecha_nacimiento: new FormControl('', [
-      ]),
-      imagen: new FormControl('', [
-      ]),
-      password: new FormControl('', [
-        Validators.required,
-        Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/)
-      ]),
-      repite_password: new FormControl('')
-    }, [Validators.required, this.passwordRepeatValidator]);
+
   }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    const usuario = await this.userService.getById()
+    this.formulario = new FormGroup({
+      nombre: new FormControl(usuario.nombre, [
+      ]),
+      apellidos: new FormControl(usuario.apellidos, [
+      ]),
+      email: new FormControl(usuario.email, [
+        Validators.pattern(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)
+      ]),
+      direccion: new FormControl(usuario.direccion, [
+      ]),
+      sexo: new FormControl(usuario.sexo, [
+      ]),
+      fecha_nacimiento: new FormControl(usuario.fecha_nacimiento, [
+      ]),
+      imagen: new FormControl(usuario.imagen, [
+      ]),
+    })
     const control = this.formulario.get('email');
     control
       .valueChanges

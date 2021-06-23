@@ -31,7 +31,7 @@
             </div>
             <div class="col-4">
                 <label class="form-label">Fecha de nacimiento:</label>
-                <p>{{usuario?.fecha_nacimiento}}</p>
+                <p>{{usuario?.fecha_nacimiento | date:"dd/MM/YYYY" }}</p>
             </div>
             <div class="col-4">
                 <label class="form-label">Email:</label>

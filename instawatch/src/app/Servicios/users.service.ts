@@ -30,6 +30,11 @@ export class UsersService {
   }
 
   update(formValues) {
-    return this.httpClient.post(this.baseUrl + "/perfil/", formValues).toPromise();
+    const httpOptions = {
+      headers: new HttpHeaders({
+        authorization: localStorage.getItem('token')
+      })
+    };
+    return this.httpClient.post(this.baseUrl + "/perfil/", formValues, httpOptions).toPromise();
   }
 }
