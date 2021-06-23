@@ -23,6 +23,7 @@ import { PresentacionesComponent } from './Componentes/Forum/presentaciones/pres
 import { PerfilComponent } from './Componentes/perfil/perfil.component';
 import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
 import { CollectionComponent } from './Componentes/perfil/collection/collection.component';
+import { EditarRelojComponent } from './Componentes/perfil/editar-reloj/editar-reloj.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { CollectionComponent } from './Componentes/perfil/collection/collection.
     PresentacionesComponent,
     PerfilComponent,
     NewWatchComponent,
-    CollectionComponent
+    CollectionComponent,
+    EditarRelojComponent
   ],
   imports: [
     BrowserModule,

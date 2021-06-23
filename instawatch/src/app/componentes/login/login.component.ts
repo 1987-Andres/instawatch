@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
 
       // Swal.fire('Login Correcto', 'Ya puedes disfrutar de la aplicación', 'success');
       localStorage.setItem('token', response['token']);
+
     }
   }
 

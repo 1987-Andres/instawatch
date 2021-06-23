@@ -1,10 +1,8 @@
 <div class="profile">
     <div class="all-data row">
-        <div class="col-4"><img
-                src="https://www.researchgate.net/publication/340868577/figure/fig1/AS:883507039580169@1587655901877/Figura-2-Imagen-del-querido-y-excentrico-Gonzo-de-los-Muppets.ppm"
-                alt="">
+        <div class="col-4"><img src="{{usuario?.imagen}}" alt="">
             <div>
-                <button><a [routerLink]="['/perfil/newwatch']" routerLinkActive="active">Editar mi perfil</a></button>
+                <button><a [routerLink]="['/perfil/edit']" routerLinkActive="active">Editar mi perfil</a></button>
 
                 <button><a [routerLink]="['/perfil/collection']" routerLinkActive="active">Ver mi
                         colección</a></button>
@@ -17,27 +15,27 @@
         <div class="data row col-8">
             <div class="col-4">
                 <label class="form-label">Nombre:</label>
-                <p>Gonzo</p>
+                <p>{{usuario?.nombre}}</p>
             </div>
             <div class="col-4">
                 <label class="form-label">Apellidos:</label>
-                <p>Teleñeco</p>
+                <p>{{usuario?.apellidos}}</p>
             </div>
             <div class="col-4">
                 <label class="form-label">Dirección:</label>
-                <p>Dirección del pájaro</p>
+                <p>{{usuario?.direccion}}</p>
             </div>
             <div class="col-4">
                 <label class="form-label">Sexo:</label>
-                <p>No definido</p>
+                <p>{{usuario?.sexo}}</p>
             </div>
             <div class="col-4">
                 <label class="form-label">Fecha de nacimiento:</label>
-                <p>XX/XX/XXXX</p>
+                <p>{{usuario?.fecha_nacimiento}}</p>
             </div>
             <div class="col-4">
                 <label class="form-label">Email:</label>
-                <p>gonzo@gonzo.com</p>
+                <p>{{usuario?.email}}</p>
             </div>
         </div>
     </div>

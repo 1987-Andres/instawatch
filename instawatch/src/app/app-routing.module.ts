@@ -16,6 +16,7 @@ import { CompraventaComponent } from './Componentes/Forum/compraventa/compravent
 import { PerfilComponent } from './Componentes/perfil/perfil.component';
 import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
 import { CollectionComponent } from './Componentes/perfil/collection/collection.component';
+import { EditarRelojComponent } from './Componentes/perfil/editar-reloj/editar-reloj.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'perfil', component: PerfilComponent },
   { path: 'perfil/newwatch', component: NewWatchComponent },
   { path: 'perfil/collection', component: CollectionComponent },
+  { path: 'perfil/edit', component: EditarRelojComponent },
   { path: '**', redirectTo: '/home' },
 ];
 

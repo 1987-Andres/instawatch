@@ -15,8 +15,5 @@ export class CollectionComponent implements OnInit {
 
   async ngOnInit() {
     this.relojes = await this.watchService.getByUser();
-    console.log(this.relojes);
-
-
   }
 }
