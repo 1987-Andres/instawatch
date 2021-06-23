@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ForumService } from 'src/app/Servicios/forum.service';
+import { Post } from '../../interfaces/lista_posts.interface';
 
 @Component({
   selector: 'app-respuesta-foro',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RespuestaForoComponent implements OnInit {
 
-  constructor() { }
+  post: Post
 
-  ngOnInit(): void {
+  constructor(private forumService: ForumService) {
+  }
+
+  async ngOnInit() {
+    this.post = await this.forumService.getById(6)
+    console.log(this.post);
+
   }
 
 }

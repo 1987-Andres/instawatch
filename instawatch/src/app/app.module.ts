@@ -48,7 +48,7 @@ import { RespuestaForoComponent } from './Componentes/forum/respuesta-foro/respu
     NewWatchComponent,
     CollectionComponent,
     EditarRelojComponent,
-    RespuestaForoComponent
+    RespuestaForoComponent,
   ],
   imports: [
     BrowserModule,
