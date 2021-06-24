@@ -25,6 +25,7 @@ import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.comp
 import { CollectionComponent } from './componentes/perfil/collection/collection.component';
 import { EditarRelojComponent } from './componentes/perfil/editar-reloj/editar-reloj.component';
 import { RespuestaForoComponent } from './componentes/forum/respuesta-foro/respuesta-foro.component';
+import { FormularioRespuestaComponent } from './componentes/forum/formulario-respuesta/formulario-respuesta.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { RespuestaForoComponent } from './componentes/forum/respuesta-foro/respu
     CollectionComponent,
     EditarRelojComponent,
     RespuestaForoComponent,
+    FormularioRespuestaComponent,
   ],
   imports: [
     BrowserModule,

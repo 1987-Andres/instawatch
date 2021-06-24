@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ForumService } from 'src/app/Servicios/forum.service';
 import { Post } from '../../interfaces/lista_posts.interface';
+import { Respuesta } from '../../interfaces/lista_respuestas.interface';
 
 @Component({
   selector: 'app-respuesta-foro',
@@ -10,15 +11,19 @@ import { Post } from '../../interfaces/lista_posts.interface';
 })
 export class RespuestaForoComponent implements OnInit {
 
+  respuestas: Respuesta[];
   post: Post
 
   constructor(private forumService: ForumService, private activatedRoute: ActivatedRoute) {
   }
 
-  async ngOnInit() {
-    // parte dinamica de url
-    this.post = await this.forumService.getById(6)
+  ngOnInit() {
+    this.activatedRoute.params.subscribe(async (params) => {
+      this.post = await this.forumService.getById(params.id);
+    })
 
   }
 
 }
+
+
