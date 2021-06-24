@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService } from 'src/app/Servicios/users.service';
-
-declare var Swal;
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-login',
@@ -29,11 +28,12 @@ export class LoginComponent implements OnInit {
     if (response['error']) {
       console.log(response['error']);
 
-      // Swal.fire('Error de login', response['error'], 'error');
+      Swal.fire('Error de login', response['error'], 'error');
+
     } else {
       this.router.navigate(['perfil']);
 
-      // Swal.fire('Login Correcto', 'Ya puedes disfrutar de la aplicación', 'success');
+      Swal.fire('Login Correcto', 'Ya puedes disfrutar Instawatch', 'success');
       localStorage.setItem('token', response['token']);
 
     }

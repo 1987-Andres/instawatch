@@ -3,8 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { debounceTime } from 'rxjs/operators';
 import { UsersService } from 'src/app/Servicios/users.service';
-
-declare var Swal;
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-registro',
@@ -55,18 +54,18 @@ export class RegistroComponent implements OnInit {
       .valueChanges
       .pipe(debounceTime(1000))
       .subscribe(value => {
-        console.log(value);
+
       });
   }
 
   onSubmit() {
     this.usersService.registrar(this.formulario.value)
       .then(response => {
-        console.log(response);
 
         if (response['affectedRows'] === 1) {
           this.router.navigate(['login']);
           this.formulario.reset();
+          Swal.fire('Registro Completado', 'Ya puedes logarte en Instawatch', 'success');
         }
 
         if (response['error']) {

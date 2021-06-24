@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { WatchService } from 'src/app/Servicios/watch.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-new-watch',
@@ -12,7 +14,8 @@ export class NewWatchComponent implements OnInit {
   formulario: FormGroup;
   watches: any
 
-  constructor(private watchService: WatchService) {
+  constructor(private watchService: WatchService, private router: Router) {
+
     this.formulario = new FormGroup({
       watch_brand: new FormControl('', [
         Validators.required
@@ -43,14 +46,14 @@ export class NewWatchComponent implements OnInit {
       ]),
     })
   }
-
   ngOnInit(): void {
 
   }
 
   async onClick(formulario) {
     const response = await this.watchService.create(formulario.value)
-    console.log(response);
+    this.router.navigate(['perfil/collection']);
+    Swal.fire('Reloj añadido', 'Pasate a ver todos tus relojes', 'success');
   }
 
   checkControl(controlName, validatorName) {
