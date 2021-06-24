@@ -3,13 +3,14 @@
         <div id="content">
             <div class="next"><button><a [routerLink]="['/forum/formulario']" routerLinkActive="active">Publicar Nuevo
                         Hilo</a></button></div>
-            <h3>Love is in the air?. Presentanos a tu nuevo reloj.</h3>
+            <h3>Love is in the air?. Preséntanos a tu nuevo reloj.</h3>
             <dl>
                 <article *ngFor="let post of posts">
                     <a href="">
                         <h4>{{post.titulo}}</h4>
                     </a>
                     <span>{{post.descripcion}}</span>
+                    <hr>
                 </article>
             </dl>
         </div>
