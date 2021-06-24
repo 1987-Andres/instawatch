@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Post } from '../componentes/interfaces/lista_posts.interface';
 
@@ -13,7 +13,7 @@ export class ForumService {
 
   getAll(): Promise<Post[]> {
 
-    // GET http://localhost:3000/api/watches
+    // GET http://localhost:3000/api/foro
 
     return this.httpClient.get<Post[]>(this.baseUrl).toPromise();
   }
@@ -29,5 +29,14 @@ export class ForumService {
 
     return this.httpClient.get(this.baseUrl + pCategoria).toPromise();
   }
+
+  getById(pId): Promise<any> {
+    return this.httpClient.get(this.baseUrl + "post/" + pId).toPromise();
+
+    // return this.httpClient.get(`${this.baseUrl}/post/?`).toPromise();
+
+    // return this.httpClient.get(`http://http://localhost:3000/api/foro/post/?id=${pId}`).toPromise();
+  }
+
 
 }
