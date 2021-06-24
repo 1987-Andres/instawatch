@@ -4,8 +4,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ForumService } from 'src/app/Servicios/forum.service';
 import { Post } from '../../interfaces/lista_posts.interface';
-
-declare var Swal;
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-formulario-respuesta',
@@ -23,7 +22,6 @@ export class FormularioRespuestaComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.params.subscribe(async (params) => {
       this.post = await this.forumService.getById(params.id)
-      console.log(params);
       this.formulario = new FormGroup({
         fk_post: new FormControl(this.post.id, [
           Validators.required
@@ -38,14 +36,16 @@ export class FormularioRespuestaComponent implements OnInit {
   onSubmit() {
     this.forumService.createRespuesta(this.formulario.value)
       .then(response => {
+        this.router.navigate(['foro']);
+        Swal.fire('Respuesta publicada', 'Continua en el foro', 'success');
         console.log(response);
       })
       .catch(error => console.log(error));
   }
 
 
-  checkControl(controlName, validatorName) {
-    return this.formulario.get(controlName).hasError(validatorName) && this.formulario.get(controlName).touched;
+  checkControl(controldirection, validatordirection) {
+    return this.formulario.get(controldirection).hasError(validatordirection) && this.formulario.get(controldirection).touched;
   }
 
 }
