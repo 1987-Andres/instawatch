@@ -1,23 +1,15 @@
-<form [formGroup]="formulario">
-    <div class="mb-3">
-        <label class="form-label">Titulo</label>
-        <input type="text" class="form-control" formControlName="titulo">
-        <p class="error" *ngIf="checkControl('titulo', 'required')">
-            El campo titulo es requerido
-        </p>
-        <p class="error" *ngIf="checkControl('titulo', 'minlength')">
-            El tamaño del titulo debe ser mínimo 3 caracteres
-        </p>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Descripcion</label>
-        <textarea name="" id="descripcion" formControlName="descripcion"></textarea>
-        <p class="error" *ngIf="checkControl('descripcion', 'required')">
-            El campo descripcion es requerido
-        </p>
-        <p class="error" *ngIf="checkControl('descripcion', 'minlength')">
-            El tamaño de la descripcion debe ser como minimo 10 caracteres
-        </p>
+<form [formGroup]="formulario" class="row">
+    <div class="col-4">
+        <div class="titulo">
+            <label class="form-label">Título:</label>
+            <input placeholder="Escribe tu título aquí..." type="text" class="form-control" formControlName="titulo">
+            <p class="error" *ngIf="checkControl('titulo', 'required')">
+                El campo titulo es requerido
+            </p>
+            <p class="error" *ngIf="checkControl('titulo', 'minlength')">
+                El tamaño del titulo debe ser mínimo 3 caracteres
+            </p>
+        </div>
         <select id="categoria" formControlName="categoria">
             <option value="presentaciones">Presentaciones</option>
             <option value="dudas">Dudas</option>
@@ -27,6 +19,17 @@
                 El campo descripcion es requerido
             </p>
         </select>
+    </div>
+    <div class="col-8">
+        <label class="form-label">Descripción:</label>
+        <textarea placeholder="Escribe aquí..." name="" id="descripcion" formControlName="descripcion"></textarea>
+        <p class="error" *ngIf="checkControl('descripcion', 'required')">
+            El campo descripcion es requerido
+        </p>
+        <p class="error" *ngIf="checkControl('descripcion', 'minlength')">
+            El tamaño de la descripcion debe ser como minimo 10 caracteres
+        </p>
+
     </div>
 
     <button (click)="onClick(formulario)" type="submit" class="btn btn-info" [disabled]="!formulario.valid">Crear

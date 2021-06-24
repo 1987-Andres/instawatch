@@ -1,4 +1,102 @@
 #descripcion{
     width: 100%;
-    height: 300px;
+    height: 150px;
+    
 }
+#descripcion:focus{
+border: 5px solid skyblue;
+}
+
+/* ESTILOS COPIADOS DESDE AQUÍ */
+
+/* estilos  */
+
+/* estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    --color:#011f4b;
+    color: var(--color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    border: 1px solid var(--color);
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+.form-label{
+    color: var(--color);
+    margin-bottom: 10px;
+    
+}
+.col-4{
+    padding-right: 30px;
+}
+.col-8 textarea{
+    border-radius: 0.25rem;
+}
+#categoria{
+    margin-top: 10px;
+}
+
+
+
+
+/* ===========================================
+Estilos formulario
+============================================== */
+
+.formulario{
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.formulario input[type='text'],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid var(--color);
+    border-radius: 0.25rem;
+    color: var(--color);
+    
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    
+}
+
+
+.formulario input[type='text']:focus,
+.formulario textarea:focus{
+    border-radius: 10px;
+    border: 5px solid skyblue;
+}
+input{
+    
+    border-radius: .25rem;
+}
+
+button{
+  width: 240px;
+  color: white;
+  background-color: var(--color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 900px;
+}
+.btn{
+    background-color: var(--color);
+}
+.btn:hover{
+    color: white;
+    font-weight: bold;
+}
+
+
