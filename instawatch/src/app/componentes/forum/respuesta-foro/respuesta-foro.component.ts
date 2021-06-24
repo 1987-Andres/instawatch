@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ForumService } from 'src/app/Servicios/forum.service';
 import { Post } from '../../interfaces/lista_posts.interface';
 
@@ -11,12 +12,12 @@ export class RespuestaForoComponent implements OnInit {
 
   post: Post
 
-  constructor(private forumService: ForumService) {
+  constructor(private forumService: ForumService, private activatedRoute: ActivatedRoute) {
   }
 
   async ngOnInit() {
+    // parte dinamica de url
     this.post = await this.forumService.getById(6)
-    console.log(this.post);
 
   }
 

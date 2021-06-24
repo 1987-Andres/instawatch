@@ -17,7 +17,6 @@ export class PerfilComponent implements OnInit {
 
   async ngOnInit() {
     this.usuario = await this.usersService.getById();
-    console.log(this.usuario);
   }
 
 }

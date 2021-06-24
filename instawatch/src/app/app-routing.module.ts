@@ -8,15 +8,15 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { WatchCardComponent } from './componentes/watch-card/watch-card.component';
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
 import { ForumComponent } from './componentes/forum/forum.component';
-import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
-import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
-import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.component';
-import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
-import { CompraventaComponent } from './Componentes/Forum/compraventa/compraventa.component';
-import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { FormularioComponent } from './componentes/Forum/formulario/formulario.component';
+import { PresentacionesComponent } from './componentes/Forum/presentaciones/presentaciones.component';
+import { DudillasComponent } from './componentes/Forum/dudillas/dudillas.component';
+import { NovedadesComponent } from './componentes/Forum/novedades/novedades.component';
+import { CompraventaComponent } from './componentes/Forum/compraventa/compraventa.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
-import { CollectionComponent } from './Componentes/perfil/collection/collection.component';
-import { EditarRelojComponent } from './Componentes/perfil/editar-reloj/editar-reloj.component';
+import { CollectionComponent } from './componentes/perfil/collection/collection.component';
+import { EditarRelojComponent } from './componentes/perfil/editar-reloj/editar-reloj.component';
 import { RespuestaForoComponent } from './componentes/forum/respuesta-foro/respuesta-foro.component';
 
 
@@ -38,7 +38,7 @@ const routes: Routes = [
   { path: 'perfil/newwatch', component: NewWatchComponent },
   { path: 'perfil/collection', component: CollectionComponent },
   { path: 'perfil/edit', component: EditarRelojComponent },
-  { path: 'forum/respuesta', component: RespuestaForoComponent },
+  { path: 'forum/respuesta/:id', component: RespuestaForoComponent },
   { path: '**', redirectTo: '/home' },
 ];
 

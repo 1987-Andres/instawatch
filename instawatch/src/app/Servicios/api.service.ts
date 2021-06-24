@@ -18,6 +18,6 @@ export class ApiService {
   }
 
   filterByMarca(pMarca: string): Promise<any> {
-    return this.httpClient.get(this.baseUrl + pMarca).toPromise();
+    return this.httpClient.get(this.baseUrl + "marca/" + pMarca).toPromise();
   };
 }

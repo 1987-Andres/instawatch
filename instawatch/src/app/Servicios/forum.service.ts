@@ -31,8 +31,11 @@ export class ForumService {
   }
 
   getById(pId): Promise<any> {
-
     return this.httpClient.get(this.baseUrl + "post/" + pId).toPromise();
+
+    // return this.httpClient.get(`${this.baseUrl}/post/?`).toPromise();
+
+    // return this.httpClient.get(`http://http://localhost:3000/api/foro/post/?id=${pId}`).toPromise();
   }
 
 
