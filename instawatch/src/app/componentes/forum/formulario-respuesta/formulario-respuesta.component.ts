@@ -19,19 +19,19 @@ export class FormularioRespuestaComponent implements OnInit {
   post: Post;
 
   constructor(private forumService: ForumService, private activatedRoute: ActivatedRoute, private router: Router) {
-    this.formulario = new FormGroup({
-      id: new FormControl('', [
-        Validators.required
-      ]),
-      descripcion: new FormControl('', [
-        Validators.required
-      ])
-    })
   }
   ngOnInit() {
     this.activatedRoute.params.subscribe(async (params) => {
       this.post = await this.forumService.getById(params.id)
       console.log(params);
+      this.formulario = new FormGroup({
+        fk_post: new FormControl(this.post.id, [
+          Validators.required
+        ]),
+        descripcion: new FormControl('', [
+          Validators.required
+        ])
+      })
 
     })
   }
