@@ -18,6 +18,7 @@ import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.comp
 import { CollectionComponent } from './componentes/perfil/collection/collection.component';
 import { EditarRelojComponent } from './componentes/perfil/editar-reloj/editar-reloj.component';
 import { RespuestaForoComponent } from './componentes/forum/respuesta-foro/respuesta-foro.component';
+import { FormularioRespuestaComponent } from './componentes/forum/formulario-respuesta/formulario-respuesta.component';
 
 
 const routes: Routes = [
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'perfil/collection', component: CollectionComponent },
   { path: 'perfil/edit', component: EditarRelojComponent },
   { path: 'forum/respuesta/:id', component: RespuestaForoComponent },
+  { path: 'forum/formulario-respuesta/:id', component: FormularioRespuestaComponent },
   { path: '**', redirectTo: '/home' },
 ];
 

@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Post } from '../componentes/interfaces/lista_posts.interface';
+import { Respuesta } from '../componentes/interfaces/lista_respuestas.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -32,11 +33,15 @@ export class ForumService {
 
   getById(pId): Promise<any> {
     return this.httpClient.get(this.baseUrl + "post/" + pId).toPromise();
-
-    // return this.httpClient.get(`${this.baseUrl}/post/?`).toPromise();
-
-    // return this.httpClient.get(`http://http://localhost:3000/api/foro/post/?id=${pId}`).toPromise();
   }
 
+  createRespuesta(pId: Respuesta) {
+
+    return this.httpClient.post(this.baseUrl + "respuesta/", pId).toPromise();
+  }
+
+  getRespuestaId(pId): Promise<any> {
+    return this.httpClient.get(this.baseUrl + "respuesta/" + pId).toPromise();
+  }
 
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ForumService } from 'src/app/Servicios/forum.service';
-import { Post } from '../../interfaces/lista_posts.interface';
 
 @Component({
   selector: 'app-formulario',
