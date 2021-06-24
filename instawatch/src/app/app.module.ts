@@ -14,17 +14,17 @@ import { WatchCardComponent } from './componentes/watch-card/watch-card.componen
 import { WatchShowComponent } from './componentes/watch-show/watch-show.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ForumComponent } from './componentes/forum/forum.component';
-import { FormularioComponent } from './Componentes/Forum/formulario/formulario.component';
+import { FormularioComponent } from './componentes/Forum/formulario/formulario.component';
 import { CommonModule } from '@angular/common';
-import { CompraventaComponent } from './Componentes/Forum/compraventa/compraventa.component';
-import { DudillasComponent } from './Componentes/Forum/dudillas/dudillas.component';
-import { NovedadesComponent } from './Componentes/Forum/novedades/novedades.component';
-import { PresentacionesComponent } from './Componentes/Forum/presentaciones/presentaciones.component';
-import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { CompraventaComponent } from './componentes/Forum/compraventa/compraventa.component';
+import { DudillasComponent } from './componentes/Forum/dudillas/dudillas.component';
+import { NovedadesComponent } from './componentes/Forum/novedades/novedades.component';
+import { PresentacionesComponent } from './componentes/Forum/presentaciones/presentaciones.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { NewWatchComponent } from './componentes/perfil/new-watch/new-watch.component';
-import { CollectionComponent } from './Componentes/perfil/collection/collection.component';
-import { EditarRelojComponent } from './Componentes/perfil/editar-reloj/editar-reloj.component';
-import { RespuestaForoComponent } from './Componentes/forum/respuesta-foro/respuesta-foro.component';
+import { CollectionComponent } from './componentes/perfil/collection/collection.component';
+import { EditarRelojComponent } from './componentes/perfil/editar-reloj/editar-reloj.component';
+import { RespuestaForoComponent } from './componentes/forum/respuesta-foro/respuesta-foro.component';
 
 
 @NgModule({
@@ -48,7 +48,7 @@ import { RespuestaForoComponent } from './Componentes/forum/respuesta-foro/respu
     NewWatchComponent,
     CollectionComponent,
     EditarRelojComponent,
-    RespuestaForoComponent
+    RespuestaForoComponent,
   ],
   imports: [
     BrowserModule,

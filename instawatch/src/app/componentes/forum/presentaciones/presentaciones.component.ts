@@ -16,6 +16,7 @@ export class PresentacionesComponent implements OnInit {
 
   async ngOnInit() {
     this.posts = await this.forumService.getByCategoria('presentaciones')
+
   }
 
 }

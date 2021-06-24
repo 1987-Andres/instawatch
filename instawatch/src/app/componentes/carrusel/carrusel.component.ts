@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/Servicios/api.service';
+import { Reloj } from '../interfaces/lista_relojes.interface';
 
 @Component({
   selector: 'app-carrusel',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarruselComponent implements OnInit {
 
-  constructor() { }
+  relojes: Reloj[];
 
-  ngOnInit(): void {
+  constructor(private apiService: ApiService) { }
+
+  async ngOnInit() {
+    this.relojes = await this.apiService.getAll();
+    console.log(this.relojes);
+
   }
 
 }
