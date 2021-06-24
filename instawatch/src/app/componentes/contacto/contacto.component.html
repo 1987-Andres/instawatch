@@ -1,48 +1,60 @@
-<div class="contenedor">
+<div class="container row">
 
-    <h1>Formulario Contacto</h1>
+    <!-- =========
+    LINK FONT-AWESOME
+     =========== -->
 
-    <div class="contenido">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <div class="info">
+    <div class="col-5">
 
-            <div class="col">
-                <i class="icono fas fa-map-marker-alt"></i>
-                <a href="https://www.google.es/maps/preview" target="_blank">Gran via 45</a>
+        <h1>Formulario Contacto</h1>
+
+
+        <div class="contenido">
+
+            <div class="infos">
+
+                <div class="col">
+                    <i class="icono fas fa-map-marker-alt"></i>
+                    <a href="https://www.google.es/maps/preview" target="_blank">Gran via 45</a>
+                </div>
+
+                <div class="col">
+                    <i class="icono fas fa-envelope"></i>
+                    <a href="mailto:instawatch@instawatch.com">instawatch@instawatch.com</a>
+                </div>
+
+                <div class="col">
+                    <i class="icono fas fa-phone"></i>
+                    <a href="tel:+34678567876">665455577
+                    </a>
+                </div>
+
+                <div class="redes-s">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                </div>
+
             </div>
-
-            <div class="col">
-                <i class="icono fas fa-envelope"></i>
-                <a href="mailto:instawatch@instawatch.com">instawatch@instawatch.com</a>
-            </div>
-
-            <div class="col">
-                <i class="icono fas fa-phone"></i>
-                <a href="tel:+34678567876">665455577
-                </a>
-            </div>
-
-            <div class="redes-s">
-
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-
-            </div>
-
         </div>
-
-        <form action="enviado.html" method="GET" class="formulario">
-
-            <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-            <input type="text" name="correo" placeholder="Correo electróico" id="correo">
-            <input type="text" name="asunto" placeholder="Asunto" id="asunto">
-            <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-            <button type="button" onclick="validarFormulario()">Enviar</button>
-
-
-        </form>
-
     </div>
+    <form action="enviado.html" method="GET" class="formulario col-7">
+
+        <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+        <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
+        <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+        <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+
+
+    </form>
+
+
 
 </div>
