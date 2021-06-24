@@ -5,6 +5,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    margin: 0 auto;
+    --color:#011f4b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid var(--color) ;
+    
 }
 
 a{
@@ -26,22 +38,6 @@ body{
     font-size: 16px;
 }
 
-.contenedor{
-    width: 90%;
-    max-width: 1000px;
-    background: #fff;
-    padding: 40px;
-    margin: 20px auto;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-}
-
-.contenedor h1{
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 25px;
-    color: #15CF8A;
-}
 
 .contenido{
     display: flex;
@@ -145,3 +141,4 @@ Estilos formulario
     cursor: pointer;
     float: right;
 }
+
