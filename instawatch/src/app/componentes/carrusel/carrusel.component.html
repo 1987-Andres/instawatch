@@ -6,10 +6,9 @@
             <!-- PRIMER CARRUSEL -->
             <div class="carousel-item active">
                 <div class="row">
-                    <div class="col">
+                    <div class="col" *ngFor="let reloj of relojes">
 
-                        <a href=""><img class=""
-                                src="https://cdn.watchbase.com/watch/lg/origin:png/rolex/daytona/116500ln-0001-51.webp"
+                        <a [routerLink]="['/watch-show']" routerLinkActive="active"><img class="" src="{{reloj.imagen}}"
                                 class="d-block w-100" alt="..."></a>
                     </div>
                     <div class="col">

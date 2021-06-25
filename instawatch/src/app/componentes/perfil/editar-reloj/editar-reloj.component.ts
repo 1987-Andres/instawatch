@@ -3,8 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { debounceTime } from 'rxjs/operators';
 import { UsersService } from 'src/app/Servicios/users.service';
-
-declare var Swal;
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-editar-reloj',
@@ -53,6 +52,7 @@ export class EditarRelojComponent implements OnInit {
         if (response['affectedRows'] === 1) {
           this.router.navigate(['perfil']);
           this.formulario.reset();
+          Swal.fire('Correcto', 'Perfil editado', 'success');
         }
 
         if (response['error']) {

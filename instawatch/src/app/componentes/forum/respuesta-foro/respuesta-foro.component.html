@@ -2,6 +2,11 @@
     <div id="content-wrapper">
         <div id="content">
             <h3>Estás en la sección respuestas.</h3>
+            <button>
+                <a [routerLink]="['/forum/formulario-respuesta', post?.id]" routerLinkActive="active">Responder
+                    este
+                    hilo</a>
+            </button>
             <dl>
                 <article>
                     <h4>{{post?.titulo}}</h4>
@@ -10,13 +15,8 @@
                     <div class="respuestas" *ngFor="let respuesta of post?.respuestas">
                         <h4>{{respuesta.titulo}}</h4>
                         <span>{{respuesta.descripcion}}</span>
+                        <hr>
                     </div>
-                    <hr>
-                    <button>
-                        <a [routerLink]="['/forum/formulario-respuesta', post?.id]" routerLinkActive="active">Responder
-                            este
-                            hilo</a>
-                    </button>
                 </article>
             </dl>
         </div>

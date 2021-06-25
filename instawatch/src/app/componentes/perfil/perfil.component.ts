@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from 'src/app/Servicios/users.service';
 import { Usuario } from '../interfaces/lista_usuarios.interface';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-perfil',
