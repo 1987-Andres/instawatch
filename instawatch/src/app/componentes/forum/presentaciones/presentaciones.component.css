@@ -15,7 +15,9 @@ html
 
 a:link { text-decoration: none; color: white; }
 
-a:visited { text-decoration: none; color: #557799; }
+a:visited { text-decoration: none; 
+	color: #557799; 
+}
 
 a:hover, a:active { color: white;  }
 
