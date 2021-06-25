@@ -1,8 +1,14 @@
 /* INICIO MAIN */
 
 
+*{
+    --color: #011f4b;
+}
 
-
+h2{
+    font-size: 40px;
+    color: var(--color);
+}
 .press-one{
     
     background: url("https://watch-test.com/wp-content/uploads/2021/06/Breguet-Type-XXI-3815-cover.jpg") no-repeat center center/cover;
