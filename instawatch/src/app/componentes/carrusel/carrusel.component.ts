@@ -14,7 +14,7 @@ export class CarruselComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   async ngOnInit() {
-    this.relojes = await this.apiService.getAll();
+    this.relojes = await this.apiService.getRandom();
     console.log(this.relojes);
 
   }

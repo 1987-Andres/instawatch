@@ -57,5 +57,4 @@ export class WatchService {
     return this.httpClient.get(this.baseUrl + pId, httpOptions).toPromise();
   }
 
-
 }

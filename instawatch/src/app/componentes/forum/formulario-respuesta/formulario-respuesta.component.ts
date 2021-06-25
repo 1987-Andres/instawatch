@@ -16,12 +16,14 @@ export class FormularioRespuestaComponent implements OnInit {
   formulario: FormGroup;
   posts: any;
   post: Post;
+  postId: number;
 
   constructor(private forumService: ForumService, private activatedRoute: ActivatedRoute, private router: Router) {
   }
   ngOnInit() {
     this.activatedRoute.params.subscribe(async (params) => {
       this.post = await this.forumService.getById(params.id)
+      this.postId = params.id;
       this.formulario = new FormGroup({
         fk_post: new FormControl(this.post.id, [
           Validators.required
@@ -36,8 +38,8 @@ export class FormularioRespuestaComponent implements OnInit {
   onSubmit() {
     this.forumService.createRespuesta(this.formulario.value)
       .then(response => {
-        this.router.navigate(['foro']);
         Swal.fire('Respuesta publicada', 'Continua en el foro', 'success');
+        this.router.navigate(['/forum', 'respuesta', this.postId]);
         console.log(response);
       })
       .catch(error => console.log(error));
