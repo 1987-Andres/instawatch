@@ -20,4 +20,10 @@ export class ApiService {
   filterByMarca(pMarca: string): Promise<any> {
     return this.httpClient.get(this.baseUrl + "marca/" + pMarca).toPromise();
   };
+
+  getRandom(): Promise<any> {
+
+    return this.httpClient.get(this.baseUrl + "random").toPromise();
+  }
+
 }
