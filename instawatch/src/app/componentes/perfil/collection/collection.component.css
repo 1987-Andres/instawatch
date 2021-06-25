@@ -1,33 +1,233 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-      --color:#011f4b;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-h1{
-    color: var(--color);
-    text-align: center;
-    margin-bottom: 50px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:#011f4b;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .relojes{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .reloj{
-    border: 1px solid black;
-    background-color: burlywood;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
-    width: 300px;
-    height: auto;
-    text-align: center;
+    margin: 10px;
 }
 
 .reloj img{
-    width: 250px;
-    height: auto;
+    width: 100%;
+}
+
+.reloj h4{
+    font-size: 12px;
+}
+
+select{
+    margin-right: 20px;
+
+}
+/* CONTAINER */
+
+ .container{
+    /* margin: 0 auto; */
+    margin-top: 5px;
+    width: 900px;
+    height: 510px;
+    border: 2px solid var(--color) ;
+    border-radius: 30px;
+    box-shadow: 20px 20px var(--color);
+    
+    margin-left: -500px;
+    /* padding-bottom: -500px; */
+    
+}
+
+
+/* SECTION HEAD H1 H2 & H3 */
+h1{
+    color: var(--color);
+    margin-left: 50px;
+    text-decoration: underline;
+    font-style: italic;
+    margin-top: 10px;
+
+}
+h3{
+    color: var(--color);
+    /* padding-bottom: 20px; */
+    margin: 10px 60px;
+    
+}
+h2, h4{
+    color: var(--color);
+    text-align: center;
+}
+.head h3{
+    /* padding-top: 100px; */
+    margin-top: 20px;
+}
+.watch-name{
+width: 500px;
+    margin-left: -10px;
+}
+
+
+/* BOTONES NAV TOP */
+
+
+
+ .nav-btn-top{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    
+}
+ .nav-btn-top :first-child{
+    padding-right: 20px;
+}
+ button{
+    width: 140px;
+    background-color: var(--color);
+    margin-top: -100px;
+    color: white;
+    
+}
+
+
+
+/* SECCIÓN DISPLAY */
+
+ .display{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 800px;
+    
+    
+}
+.foto-display{
+    margin: 0 auto;
+    width: 120px;
+    height: 200px;
+    
+}
+
+.watch-pic{
+    
+    width: 200px;
+    height: 270px;
+    border: 2px solid var(--color);
+    border-radius: 30px; 
+    margin-right: 20px;
+    /* background: no-repeat center center/cover; */
+
+}
+.watch-info{
+    display: flex;
+    width: 700px;
+    height: 270px;
+    border: 2px solid var(--color);
+    border-radius: 30px;
+}
+.watch-fields div{
+    width: 220px;
+    height: 25px;
+    margin: 16px 20px;
+    background-color: var(--color);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    
+}
+.watch-hist{
+    margin-top: 1px ;
+    font-size: 15px;
+
+}
+.watch-hist p{
+    
+    padding: 0px 15px;
+    text-align: justify;
+}
+.watch-hist h3{
+    margin-left: 20px;
+}
+/* BOTONES NAV BOTTOM */
+.nav-btn-bottom{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 60px;
+    
+}
+.nav-btn-bottom .btn{
+margin-left: 450px;
+margin-top: -8px;
+}
+
+/* MODAL */
+
+.modal-dialog{
+    padding-top: 20px;
+}
+
+#launch-btn{
+    width: 90%;
+    margin: 20px 10px;
+    background-color: var(--color);
+    border: none;
+}
+.modal-title{
+    padding-left: 20px;
+}
+.modal-header{
+    background-color: var(--color);
+    color: white;
+    width: auto;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.btn-close{
+    background-color: white;
+    width: 25px;
+    height: 100%;
+    margin-right: 5px;
+    margin: 0px 0px;
+    
+}
+
+
+.modal-content{
+    
+    width: 1000px;
+    height: 600px;
+    margin-left: 500px;
+}
+.modal-body{
+    
+    margin: 0 auto;
+    
+    
+}
+#exampleModal{
+    margin: 0 auto;
+    width: 1350px;
+    
+}
+.modal-footer{
+    display: flex;
+    margin-bottom: 20px;
+    /* margin: 0 auto; */
+    height: 40px;
+}
+.btn-secondary{
+background-color: var(--color);
 }

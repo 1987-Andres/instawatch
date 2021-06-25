@@ -1,10 +1,66 @@
 <h1>Mi coleccion de relojes</h1>
 
-<div class="container">
-    <div class="relojes" *ngFor="let reloj of relojes">
-        <div class="reloj">
+<div class="relojes">
+    <div class="reloj" *ngFor="let reloj of relojes">
+        <div class="relojxxx">
             <h3>{{reloj.watch_brand}} {{reloj.watch_model}}</h3>
             <img src="{{reloj.imagen}}">
+            <button type="button" id="launch-btn" class="btn btn-primary" data-bs-toggle="modal"
+                [attr.data-bs-target]="'#exampleModal' + reloj.id">
+                Detalles
+            </button>
+            <div class="modal fade" [id]="'exampleModal' + reloj.id" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">User's Watch Collection</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+
+                                <section class="head">
+
+                                    <h1>Collection</h1>
+
+                                </section>
+                                <div class="watch-name">
+
+                                    <h3>{{reloj.watch_model}}</h3>
+                                </div>
+
+                                <section class="display">
+                                    <div class="watch-pic"
+                                        [ngStyle]="{'background': 'url('+ reloj.imagen +') no-repeat center center/cover'}">
+                                    </div>
+                                    <div class=" watch-info">
+                                        <div class="watch-fields">
+                                            <div>Brand: {{reloj.watch_brand}}</div>
+                                            <div>Model: {{reloj.watch_model}}</div>
+                                            <div>Movement: cal. 1861 Manual</div>
+                                            <div>Material: {{reloj.material}}</div>
+                                            <div>Dial Color: {{reloj.dial_color}}</div>
+                                            <div>Available: {{reloj.availability}}</div>
+                                        </div>
+                                        <div class="watch-hist">
+                                            <h3>Description:</h3>
+                                            <p>{{reloj.notes}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div class="nav-btn-bottom">
+                                    <div>
+                                        <button>More Photos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
