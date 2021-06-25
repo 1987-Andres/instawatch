@@ -44,4 +44,8 @@ export class ForumService {
     return this.httpClient.get(this.baseUrl + "respuesta/" + pId).toPromise();
   }
 
+  deleteByFk(pId): Promise<any> {
+    return this.httpClient.get(this.baseUrl + "respuesta/" + pId).toPromise();
+  }
+
 }

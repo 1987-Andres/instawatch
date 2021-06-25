@@ -18,5 +18,4 @@ export class PresentacionesComponent implements OnInit {
     this.posts = await this.forumService.getByCategoria('presentaciones')
 
   }
-
 }
