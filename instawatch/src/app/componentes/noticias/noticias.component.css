@@ -11,7 +11,7 @@ h2{
 }
 .press-one{
     
-    background: url("https://watch-test.com/wp-content/uploads/2021/06/Breguet-Type-XXI-3815-cover.jpg") no-repeat center center/cover;
+    background: url("https://hodinkee.imgix.net/uploads/images/afe4930f-130d-4d9f-82b0-d16a3a78b174/breguet06-16-20218280.jpg?ixlib=rails-1.1.0&fm=jpg&q=55&auto=format&usm=12&ch=Width%2CDPR%2CSave-Data&fit=crop&w=820&dpr=2") left;
     margin-top: 20px;
     border: 2px solid black;
     height: 300px;
@@ -20,12 +20,12 @@ h2{
 }
 .press-one h4{
     font-size: 30px;
-    color: black;
+    color: white;
     padding: 20px;
 }
 .press-one p{
     font-size: 20px;
-    color: black;
+    color: white;
     padding: 30px;
     padding-right: 500px;
     
@@ -40,7 +40,7 @@ h2{
 }
 .press-two{
     
-    background: url("https://watch-test.com/wp-content/uploads/2021/06/Oris-Aquis-Date-41-5-Calibre-400-16.jpg") no-repeat center center/cover;
+    background: url("https://hodinkee.imgix.net/uploads/images/1603894788943-b9xvvtm400s-7857f00cebe762848a8dbd21688a6850/Oris-Aquis-400-in-house-18.jpg?ixlib=rails-1.1.0&fm=jpg&q=55&auto=format&usm=12&ch=Width%2CDPR%2CSave-Data&fit=crop&w=820&dpr=2") right;
     margin-top: 20px;
     border: 2px solid black;
     height: 300px;
@@ -50,7 +50,7 @@ h2{
 }
 .press-two h4{
     font-size: 30px;
-    color: black;
+    color: white;
     text-align: right;
     padding-left: 100px;
     padding: 10px;
@@ -58,11 +58,14 @@ h2{
 
 .press-two p{
     font-size: 20px;
-    color: black;
+    color: white;
     padding: 30px;
     padding-left: 400px;
     text-align: right;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* FIN DEL MAIN */
