@@ -20,12 +20,12 @@ h2{
 }
 .press-one h4{
     font-size: 30px;
-    color: white;
+    color: black;
     padding: 20px;
 }
 .press-one p{
     font-size: 20px;
-    color: white;
+    color: black;
     padding: 30px;
     padding-right: 500px;
     
@@ -50,7 +50,7 @@ h2{
 }
 .press-two h4{
     font-size: 30px;
-    color: white;
+    color: black;
     text-align: right;
     padding-left: 100px;
     padding: 10px;
@@ -58,7 +58,7 @@ h2{
 
 .press-two p{
     font-size: 20px;
-    color: white;
+    color: black;
     padding: 30px;
     padding-left: 400px;
     text-align: right;
